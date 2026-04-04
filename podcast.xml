@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" 
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+     xmlns:googleplay="http://www.google.com/schemas/play-podcasts/1.0"
+     xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shadow of Trust: True Crime & Betrayal Stories </title>
+    <link>https://github.com/eslamelmando76-cmd/MysteryFlow</link>
+    <language>en-us</language>
+    <description> ⚠️ WARNING: Content intended for ADULTS ONLY (18+).
+
+Welcome to the official [Your Channel Name] podcast playlist. Here, we peel back the layers of human deception to reveal the dark side of trust.
+
+In this playlist, you will find chilling, real-life cases covering:
+
+Digital Romance Scams: How hearts are manipulated for profit in the digital age.
+
+Betrayal of Trust: Shocking stories of backstabbing by close friends and family.
+
+Financial Fraud: Masterful schemes of theft disguised as love and professional opportunities.
+
+Professional Betrayal: Corporate crimes and business partners who turned into enemies.
+
+Each episode is a deep dive into the "Red Flags" you should never ignore. We don't just tell stories; we provide a psychological analysis to help you stay protected in a world of masks.
+
+Subscribe and turn on notifications to catch every new episode delivered directly from our RSS feed. "</description>
+    
+    <itunes:owner>
+      <itunes:name>Eslam</itunes:name>
+      <itunes:email>eslammosde@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:author>Eslam</itunes:author>
+    <itunes:category text="Fiction"/>
+    <itunes:explicit>yes</itunes:explicit>
+    <itunes:image href='https://raw.githubusercontent.com/eslamelmando76-cmd/TrustMask-Bot/main/podcast_cover.jpg'/>
+
+       
+  
+    
+ 
+  </channel>
+</rss>

@@ -1,0 +1,6 @@
+groq
+edge-tts
+atproto
+requests
+selenium
+webdriver-manager
