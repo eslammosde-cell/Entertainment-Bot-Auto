@@ -50,6 +50,8 @@ async def generate_content():
     2. Format: Output ONLY the JSON object. No extra text.
     3. Stories: 4 unique stories (250-300 words each) with 1-sentence summaries.
     4. Theme: Dark, investigative, deep web perspective.
+    5. NEVER use the same title twice. 
+    6. Create a unique, clickbait title for each episode based on the story.
     """
     
     completion = client.chat.completions.create(
@@ -68,22 +70,21 @@ def update_rss(data, run_number):
     audio_url = f"https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v{run_number}/episode.mp3"
     main_cover_url = "https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/main/podcast_cover.jpg"
     
+    # استخراج العنوان الفعلي من JSON الـ AI
+    # لو الـ AI منساش الـ title هياخده، لو نساه هياخد اسم افتراضي برقم الـ Run
+    actual_title = data.get('title', f"Tech Mystery Deep Web v{run_number}")
+    
     meta = data.get('metadata', {})
     
-    # استخراج القصص بأمان تام وتجنب KeyError: 'id'
+    # تجميع ملخصات الـ 4 قصص عشان الوصف يتغير كل مرة
     stories = data.get('stories', [])
-    chapters_list = []
-    for i, s in enumerate(stories, 1):
-        # لو الـ id مش موجود هنستخدم رقم الحلقة i
-        s_id = s.get('id', i)
-        s_summary = s.get('summary', 'Mystery investigation continues...')
-        chapters_list.append(f"Story {s_id}: {s_summary}")
+    chapters = "\n".join([f"- {s.get('summary', 'New tech story update.')}" for s in stories])
     
-    chapters = "\n".join(chapters_list)
     full_description = f"{meta.get('description', '')}\n\nWhat's in this episode:\n{chapters}\n\n#2026 #AI #DeepWeb"
 
     file_size = os.path.getsize("episode.mp3") if os.path.exists("episode.mp3") else "1024"
 
+    # وسم الـ <title> دلوقتي هياخد actual_title المتغير
     rss_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
@@ -98,7 +99,7 @@ def update_rss(data, run_number):
       <itunes:email>eslammosde@gmail.com</itunes:email>
     </itunes:owner>
     <item>
-      <title>{data.get('title', 'New Mystery Episode')} (Ep. v{run_number})</title>
+      <title>{actual_title}</title> 
       <description>{full_description}</description>
       <pubDate>{pub_date}</pubDate>
       <itunes:explicit>yes</itunes:explicit>
