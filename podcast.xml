@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><channel>
     <itunes:image href="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/blob/f0ee9f1a6dd13bed19bb2f553ff7c200391a0988/podcast_cover.jpg"/><title>Mystery Podcast</title>
-           
+           <itunes:owner>
+    <itunes:name>Eslam</itunes:name>
+    <itunes:email>eslammosde@gmail.com</itunes:email>
+</itunes:owner>
            <item>
              <title>Uncertainty in Artificial Intelligence - Unveiling the Dark Side of Machine Learning #AI #DeepLearning (Ep. v26)</title>
              <description>Uncertainty in Artificial Intelligence - Exploring the dark side of machine learning and its implications for human society, including the future of work, deepfake technology, and potential solutions to the problem of uncertainty. Join us as we delve into the unknown and uncover the secrets of AI. Subscribe to our podcast for more episodes on the intersection of technology and society.
