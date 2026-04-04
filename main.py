@@ -2,12 +2,14 @@ import os
 import asyncio
 import json
 import edge_tts
+import time
 from groq import Groq
 from datetime import datetime, timezone
 
 # إعداد المفاتيح
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY)
+unique_version = f"{run_number}_{int(time.time())}"
 
 async def generate_content():
     # طلب محتوى احترافي مع تشديد على صيغة الـ JSON
@@ -57,7 +59,7 @@ def update_rss(data, run_number):
     # استخراج البيانات من metadata
     meta = data.get('metadata', {})
     full_description = f"{meta.get('description', '')}\n\n🔍 Keywords: {meta.get('tags', '')}\n\n{meta.get('hashtags', '')}"
-
+unique_version = f"{run_number}_{int(time.time())}"
     # تجهيز عنصر الـ XML الجديد بمسافات صحيحة
     new_item = f"""
     <item>
@@ -66,8 +68,8 @@ def update_rss(data, run_number):
         <pubDate>{pub_date}</pubDate>
         <itunes:explicit>yes</itunes:explicit>
         <itunes:image href="{main_cover_url}"/>
-        <enclosure url="{audio_url}" length="0" type="audio/mpeg"/>
-        <guid isPermaLink="false">v{run_number}</guid>
+        <enclosure url="{audio_url}" length="4793" type="audio/mpeg"/>
+        <guid isPermaLink="false">v{unique_version}</guid>
     </item>"""
 
     # قراءة وتحديث ملف RSS
