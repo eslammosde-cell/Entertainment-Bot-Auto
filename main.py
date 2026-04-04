@@ -61,16 +61,20 @@ def update_rss(data, run_number):
     full_description = f"{meta.get('description', '')}\n\n🔍 Keywords: {meta.get('tags', '')}\n\n{meta.get('hashtags', '')}"
 
     # تجهيز عنصر الـ XML الجديد بمسافات صحيحة
+    # تأكد أن هذا السطر على نفس مستوى المحاذاة مع الكود الذي قبله
+    # تأكد أن هذا السطر على نفس مستوى المحاذاة مع الكود الذي قبله
+    unique_version = f"{run_number}_{int(time.time())}"
+
     new_item = f"""
-    <item>
-        <title>{data.get('title', 'No Title')} (Ep. v{run_number})</title>
-        <description>{full_description}</description>
-        <pubDate>{pub_date}</pubDate>
-        <itunes:explicit>yes</itunes:explicit>
-        <itunes:image href="{main_cover_url}"/>
-        <enclosure url="{audio_url}" length="4793" type="audio/mpeg"/>
-        <guid isPermaLink="false">v{unique_version}</guid>
-    </item>"""
+           <item>
+             <title>{data.get('title', 'No Title')} (Ep. v{run_number})</title>
+             <description>{full_description}</description>
+             <pubDate>{pub_date}</pubDate>
+             <itunes:explicit>yes</itunes:explicit>
+             <itunes:image href="{main_cover_url}"/>
+             <enclosure url="{audio_url}" length="965632" type="audio/mpeg"/>
+             <guid isPermaLink="false">v{unique_version}</guid>
+           </item>"""
 
     # قراءة وتحديث ملف RSS
     if not os.path.exists("podcast.xml"):
