@@ -1,1 +1,58 @@
+name: Secure Podcast Automator
 
+on:
+  schedule:
+    # سيقوم بالنشر كل ساعتين بالظبط (12 حلقة في اليوم)
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  automate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          
+      - name: Install Dependencies
+        run: pip install groq edge-tts selenium webdriver-manager
+
+      - name: Run Mystery Script
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          SPOTIFY_EMAIL: ${{ secrets.SPOTIFY_EMAIL }}
+          SPOTIFY_PASSWORD: ${{ secrets.SPOTIFY_PASSWORD }}
+        run: python main.py
+
+      - name: Delete Old Episodes
+        uses: dev-drprasad/delete-older-releases@v0.2.1
+        with:
+          keep_latest: 10 # الاحتفاظ بآخر 3 فقط لضمان المساحة
+          delete_tags: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and Push RSS Update
+        run: |
+          git config --global user.name "Your Name"
+          git config --global user.email "your-email@example.com"
+          git pull origin main --rebase --autostash  # 🛑 السطر ده هيحل خناقة الملفات
+          git add .
+          git commit -m "Update RSS Feed for Episode v${{ github.run_number }}"
+          git push origin main
+      - name: Save Episode to Releases
+        uses: softprops/action-gh-release@v1
+        with:
+          files: episode.mp3
+          tag_name: "v${{ github.run_number }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and Push RSS Update
+        run: |
+          git config --global user.name "GitHub Action"
+          git config --global user.email "action@github.com"
+          git add podcast.xml
+          git commit -m "Update RSS: v${{ github.run_number }}" || echo "No changes to commit"
+          git push
