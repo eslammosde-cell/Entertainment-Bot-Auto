@@ -11,7 +11,7 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY)
 
 async def generate_content():
-    # --- [القائمة الكاملة والشاملة من كل الصور] ---
+    # --- [Trending Topics من صور يوتيوب ستوديو - غيرها أسبوعياً] ---
     trending_topics = """
     1. Uncertainty in artificial intelligence
     2. Higher dimensions of intelligence
@@ -45,34 +45,53 @@ async def generate_content():
 
     prompt = f"""
     Role: You are a professional SEO copywriter for tech and deep web news. 
-    Your task is to produce a complete podcast episode in JSON format only.
+    Task: Produce a complete podcast episode in JSON format only.
 
     Target Topics List:
     {trending_topics}
 
-    rules = """
-    1. Pick the MOST relevant trending topic from the list above.
-    2. Output ONLY the JSON object. 
-    3. Stories: Provide exactly 4 unique stories. 
-       - Each story MUST be between 250 to 300 words. (Total episode 1000-1200 words).
-    4. Metadata: The 'description' should include a 1-sentence summary of each of the 4 stories for SEO.
-    """
+    Rules:
+    1. Selection: Pick the MOST relevant trending topic from the list above.
+    2. Format: Output ONLY the JSON object. No extra text.
+    3. Stories: Provide exactly 4 unique, long-form stories.
+       - Each story MUST be between 250 to 300 words.
+       - Each story MUST have a 1-sentence 'summary' for SEO timestamps/chapters.
+    4. SEO Rule: The "title" and "metadata -> description" MUST start with the selected topic name.
+    5. Theme: Dark, investigative, deep web perspective on the selected topic.
 
-    json_structure = {
-      "title": "Selected Topic - Mysterious Title",
+    JSON Structure:
+    {{
+      "title": "Selected Topic - Mysterious Title #hashtags",
       "stories": [
-        {"id": 1, "summary": "Short 1-sentence teaser", "content": "Full 300-word story..."},
-        {"id": 2, "summary": "Short 1-sentence teaser", "content": "Full 300-word story..."},
-        {"id": 3, "summary": "Short 1-sentence teaser", "content": "Full 300-word story..."},
-        {"id": 4, "summary": "Short 1-sentence teaser", "content": "Full 300-word story..."}
+        {{
+          "id": 1, 
+          "summary": "1-sentence teaser of story 1", 
+          "content": "Full 300-word story content..."
+        }},
+        {{
+          "id": 2, 
+          "summary": "1-sentence teaser of story 2", 
+          "content": "Full 300-word story content..."
+        }},
+        {{
+          "id": 3, 
+          "summary": "1-sentence teaser of story 3", 
+          "content": "Full 300-word story content..."
+        }},
+        {{
+          "id": 4, 
+          "summary": "1-sentence teaser of story 4", 
+          "content": "Full 300-word story content..."
+        }}
       ],
-      "metadata": {
-        "description": "Topic intro + Story 1 summary + Story 2 summary...",
-        "tags": "...",
-        "hashtags": "..."
-      }
-    }
-    
+      "metadata": {{
+        "description": "Topic intro + Story summaries + call to action",
+        "tags": "list, of, keywords",
+        "hashtags": "#2026 #technology #deepweb"
+      }}
+    }}
+    """
+    # كمل كود الإرسال للـ AI هنا...
     completion = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
