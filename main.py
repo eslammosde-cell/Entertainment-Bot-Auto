@@ -51,8 +51,8 @@ def update_rss(data, run_number):
     pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     
     # روابط الملفات
-    audio_url = f"https://github.com/eslamelmando76-cmd/MysteryFlow/releases/download/v{run_number}/episode.mp3"
-    main_cover_url = "https://raw.githubusercontent.com/eslamelmando76-cmd/TrustMask-Bot/main/podcast_cover.jpg"
+    audio_url = f"https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v{run_number}/episode.mp3"
+    main_cover_url = "https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/blob/badef7fadaab0e8ee0befdf1b2d6b47bef65546c/podcast_cover.jpg"
     
     # استخراج البيانات من metadata
     meta = data.get('metadata', {})
