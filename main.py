@@ -12,7 +12,7 @@ client = Groq(api_key=GROQ_API_KEY)
 async def generate_content():
     # طلب محتوى احترافي مع تشديد على صيغة الـ JSON
     prompt = """
-    Role: You are a professional True Crime Scriptwriter. Your task is to output a single, complete podcast episode strictly in JSON format.
+    Role: You are a professional copywriter for real global news. Your task is to produce a complete podcast episode in JSON format only.
     Rules:
     1. Output ONLY the JSON object. 
     2. Language: English.
