@@ -9,7 +9,6 @@ from datetime import datetime, timezone
 # إعداد المفاتيح
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY)
-unique_version = f"{run_number}_{int(time.time())}"
 
 async def generate_content():
     # طلب محتوى احترافي مع تشديد على صيغة الـ JSON
