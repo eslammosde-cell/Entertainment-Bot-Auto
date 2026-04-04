@@ -90,7 +90,7 @@ def update_rss(data, run_number):
     <itunes:image href="{main_cover_url}"/>
     <itunes:owner>
       <itunes:name>Eslam</itunes:name>
-      <itunes:email>eslammosde.tech5@blogger.com</itunes:email>
+      <itunes:email>eslammosde@gmail.com</itunes:email>
     </itunes:owner>
     <item>
       <title>{data.get('title', 'New Mystery Episode')} (Ep. v{run_number})</title>
