@@ -14,6 +14,20 @@
     <itunes:image href="https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/main/podcast_cover.jpg" />
     <itunes:category text="News" />
 
+    
+    <item>
+        <title>Love in the Dark: Romance Scams and Betrayal of Trust #RomanceScams #BetrayalOfTrust #OnlineDating (Ep. v10)</title>
+        <description>Join us as we explore the world of romance scams and the betrayal of trust, where love and deception collide in unexpected ways.
+
+🔍 Keywords: romance scams, online dating, betrayal of trust, true crime
+
+#RomanceScams #BetrayalOfTrust #OnlineDating #TrueCrime</description>
+        <pubDate>Sat, 04 Apr 2026 10:24:05 +0000</pubDate>
+        <itunes:explicit>yes</itunes:explicit>
+        <itunes:image href="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/blob/f0ee9f1a6dd13bed19bb2f553ff7c200391a0988/podcast_cover.jpg"/>
+        <enclosure url="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v10/episode.mp3" length="0" type="audio/mpeg"/>
+        <guid isPermaLink="false">v10</guid>
+    </item>
     <item>
       <title>Shadow of Trust - Episode 1</title>
       <itunes:author>Eslam</itunes:author>
