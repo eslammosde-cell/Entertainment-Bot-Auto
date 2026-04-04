@@ -11,7 +11,6 @@ GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY)
 
 async def generate_content():
-    # --- [Trending Topics من صور يوتيوب ستوديو - غيرها أسبوعياً] ---
     trending_topics = """
     1. Uncertainty in artificial intelligence
     2. Higher dimensions of intelligence
@@ -41,57 +40,18 @@ async def generate_content():
     26. Trends that need to stop in 2026
     27. Dances that are trending 2026
     """
-    # ------------------------------------------------------------
 
     prompt = f"""
     Role: You are a professional SEO copywriter for tech and deep web news. 
     Task: Produce a complete podcast episode in JSON format only.
-
-    Target Topics List:
-    {trending_topics}
-
+    Target Topics List: {trending_topics}
     Rules:
-    1. Selection: Pick the MOST relevant trending topic from the list above.
+    1. Selection: Pick the MOST relevant trending topic.
     2. Format: Output ONLY the JSON object. No extra text.
-    3. Stories: Provide exactly 4 unique, long-form stories.
-       - Each story MUST be between 250 to 300 words.
-       - Each story MUST have a 1-sentence 'summary' for SEO timestamps/chapters.
-    4. SEO Rule: The "title" and "metadata -> description" MUST start with the selected topic name.
-    5. Theme: Dark, investigative, deep web perspective on the selected topic.
-
-    JSON Structure:
-    {{
-      "title": "Selected Topic - Mysterious Title #hashtags",
-      "stories": [
-        {{
-          "id": 1, 
-          "summary": "1-sentence teaser of story 1", 
-          "content": "Full 300-word story content..."
-        }},
-        {{
-          "id": 2, 
-          "summary": "1-sentence teaser of story 2", 
-          "content": "Full 300-word story content..."
-        }},
-        {{
-          "id": 3, 
-          "summary": "1-sentence teaser of story 3", 
-          "content": "Full 300-word story content..."
-        }},
-        {{
-          "id": 4, 
-          "summary": "1-sentence teaser of story 4", 
-          "content": "Full 300-word story content..."
-        }}
-      ],
-      "metadata": {{
-        "description": "Topic intro + Story summaries + call to action",
-        "tags": "list, of, keywords",
-        "hashtags": "#2026 #technology #deepweb"
-      }}
-    }}
+    3. Stories: 4 unique stories (250-300 words each) with 1-sentence summaries.
+    4. Theme: Dark, investigative, deep web perspective.
     """
-    # كمل كود الإرسال للـ AI هنا...
+    
     completion = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
@@ -104,74 +64,62 @@ async def text_to_speech(text, output_file):
     await communicate.save(output_file)
 
 def update_rss(data, run_number):
-    # تاريخ متغير لضمان التحديث الفوري
     pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     
-    # روابط الملفات
+    # روابط Raw سليمة 100%
     audio_url = f"https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v{run_number}/episode.mp3"
     main_cover_url = "https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/main/podcast_cover.jpg"
     
-    # استخراج البيانات من metadata
     meta = data.get('metadata', {})
-    full_description = f"{meta.get('description', '')}\n\n🔍 Keywords: {meta.get('tags', '')}\n\n{meta.get('hashtags', '')}"
+    # تجميع الملخصات للوصف
+    chapters = "\n".join([f"Story {s['id']}: {s['summary']}" for s in data['stories']])
+    full_description = f"{meta.get('description', '')}\n\nWhat's in this episode:\n{chapters}\n\n#2026 #AI #DeepWeb"
 
-    # تجهيز عنصر الـ XML الجديد بمسافات صحيحة
-    # تأكد أن هذا السطر على نفس مستوى المحاذاة مع الكود الذي قبله
-    # تأكد أن هذا السطر على نفس مستوى المحاذاة مع الكود الذي قبله
-    unique_version = f"{run_number}_{int(time.time())}"
+    # حساب حجم الملف الحقيقي لضمان قبول يوتيوب
+    file_size = os.path.getsize("episode.mp3") if os.path.exists("episode.mp3") else "1024"
 
-    new_item = f"""
-           <item>
-             <title>{data.get('title', 'No Title')} (Ep. v{run_number})</title>
-             <description>{full_description}</description>
-             <pubDate>{pub_date}</pubDate>
-             <itunes:explicit>yes</itunes:explicit>
-             <itunes:image href="{main_cover_url}"/>
-             <enclosure url="{audio_url}" length="965632" type="audio/mpeg"/>
-             <guid isPermaLink="false">v{unique_version}</guid>
-           </item>"""
-
-    # قراءة وتحديث ملف RSS
-    if not os.path.exists("podcast.xml"):
-        # إنشاء ملف بسيط إذا لم يكن موجوداً
-        rss_content = '<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><channel><title>Deep Web Tech Stories: AI & Future Trends</title> <description>Explore the mysterious side of technology, from AI uncertainty to deep web secrets and future innovations. Updated daily based on 2026 trending tech.</description> <itunes:category text="Technology"/> <itunes:category text="Science"/> <language>en-us</language></channel></rss>'
-    else:
-        with open("podcast.xml", "r", encoding="utf-8") as f:
-            rss_content = f.read()
-
-    # إضافة الغلاف إذا لم يوجد
-    if "<itunes:image" not in rss_content.split("<item>")[0]:
-         rss_content = rss_content.replace("<channel>", f"<channel>\n    <itunes:image href=\"{main_cover_url}\"/>", 1)
-
-    # إضافة الحلقة الجديدة
-    if "<item>" in rss_content:
-        updated_rss = rss_content.replace("<item>", f"{new_item}\n    <item>", 1)
-    else:
-        updated_rss = rss_content.replace("</channel>", f"{new_item}\n  </channel>")
+    # بناء ملف RSS جديد من الصفر (Fresh Start) في كل مرة
+    rss_content = f"""<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+  <channel>
+    <title>Deep Web Tech Stories: AI &amp; 2026 Trends</title>
+    <link>https://familytvr.blogspot.com/</link>
+    <description>Investigating the dark side of technology and 2026 innovations.</description>
+    <language>en-us</language>
+    <itunes:category text="Technology"/>
+    <itunes:image href="{main_cover_url}"/>
+    <itunes:owner>
+      <itunes:name>Eslam</itunes:name>
+      <itunes:email>eslammosde.tech5@blogger.com</itunes:email>
+    </itunes:owner>
+    <item>
+      <title>{data.get('title', 'New Mystery Episode')} (Ep. v{run_number})</title>
+      <description>{full_description}</description>
+      <pubDate>{pub_date}</pubDate>
+      <itunes:explicit>yes</itunes:explicit>
+      <itunes:image href="{main_cover_url}"/>
+      <enclosure url="{audio_url}" length="{file_size}" type="audio/mpeg"/>
+      <guid isPermaLink="false">v{run_number}_{int(time.time())}</guid>
+    </item>
+  </channel>
+</rss>"""
 
     with open("podcast.xml", "w", encoding="utf-8") as f:
-        f.write(updated_rss)
+        f.write(rss_content.strip())
 
 async def main():
-    print("🤖 Generating mystery episode (4 Stories)...")
+    print("🤖 Generating mystery episode...")
     data = await generate_content()
-    
     run_num = os.getenv("GITHUB_RUN_NUMBER", "1")
     
-    print(f"🎙️ Creating Audio: {data.get('title')}")
-
-    # تجميع الـ 4 قصص معاً
+    # تجميع القصص للصوت
     full_script = "\n\n".join([s['content'] for s in data['stories']])
-
-    chapters_summary = "\n".join([f"Story {s['id']}: {s['summary']}" for s in data['stories']])
-
-    full_description = f"{data['metadata']['description']}\n\nWhat's in this episode:\n{chapters_summary}"
-
+    
+    print(f"🎙️ Creating Audio v{run_num}...")
     await text_to_speech(full_script, "episode.mp3")
     
-    print("📝 Updating RSS Feed...")
+    print("📝 Writing Fresh RSS Feed...")
     update_rss(data, run_num)
-    
     print(f"✅ Done! Episode v{run_num} is ready.")
 
 if __name__ == "__main__":
