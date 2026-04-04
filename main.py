@@ -65,20 +65,25 @@ async def text_to_speech(text, output_file):
 
 def update_rss(data, run_number):
     pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
-    
-    # روابط Raw سليمة 100%
     audio_url = f"https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v{run_number}/episode.mp3"
     main_cover_url = "https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/main/podcast_cover.jpg"
     
     meta = data.get('metadata', {})
-    # تجميع الملخصات للوصف
-    chapters = "\n".join([f"Story {s['id']}: {s['summary']}" for s in data['stories']])
+    
+    # استخراج القصص بأمان تام وتجنب KeyError: 'id'
+    stories = data.get('stories', [])
+    chapters_list = []
+    for i, s in enumerate(stories, 1):
+        # لو الـ id مش موجود هنستخدم رقم الحلقة i
+        s_id = s.get('id', i)
+        s_summary = s.get('summary', 'Mystery investigation continues...')
+        chapters_list.append(f"Story {s_id}: {s_summary}")
+    
+    chapters = "\n".join(chapters_list)
     full_description = f"{meta.get('description', '')}\n\nWhat's in this episode:\n{chapters}\n\n#2026 #AI #DeepWeb"
 
-    # حساب حجم الملف الحقيقي لضمان قبول يوتيوب
     file_size = os.path.getsize("episode.mp3") if os.path.exists("episode.mp3") else "1024"
 
-    # بناء ملف RSS جديد من الصفر (Fresh Start) في كل مرة
     rss_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
@@ -90,7 +95,7 @@ def update_rss(data, run_number):
     <itunes:image href="{main_cover_url}"/>
     <itunes:owner>
       <itunes:name>Eslam</itunes:name>
-      <itunes:email>eslammosde@gmail.com</itunes:email>
+      <itunes:email>eslammosde.tech5@blogger.com</itunes:email>
     </itunes:owner>
     <item>
       <title>{data.get('title', 'New Mystery Episode')} (Ep. v{run_number})</title>
@@ -111,16 +116,15 @@ async def main():
     print("🤖 Generating mystery episode...")
     data = await generate_content()
     
-    # صمام أمان للتأكد من وجود القصص
-    if 'stories' not in data:
-        print("❌ Error: AI failed to generate stories. Retrying...")
-        # يمكنك هنا إضافة محاولة إعادة طلب (Retry) أو إيقاف السكريبت بسلام
+    # التأكد من وجود قصص على الأقل قبل المتابعة
+    if not data.get('stories'):
+        print("❌ Error: AI returned empty stories. Stopping to prevent corrupted RSS.")
         return
 
     run_num = os.getenv("GITHUB_RUN_NUMBER", "1")
     
-    # تجميع القصص للصوت بأمان
-    full_script = "\n\n".join([s.get('content', '') for s in data['stories']])
+    # تجميع القصص للصوت بأمان (لو الـ content ناقص مش هيطلع Error)
+    full_script = "\n\n".join([s.get('content', 'Searching for more deep web data...') for s in data.get('stories', [])])
     
     print(f"🎙️ Creating Audio v{run_num}...")
     await text_to_speech(full_script, "episode.mp3")
@@ -128,6 +132,5 @@ async def main():
     print("📝 Writing Fresh RSS Feed...")
     update_rss(data, run_num)
     print(f"✅ Done! Episode v{run_num} is ready.")
-
 if __name__ == "__main__":
     asyncio.run(main())
