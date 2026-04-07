@@ -2,6 +2,7 @@
 <rss version="2.0" 
      xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
      xmlns:content="http://purl.org/rss/1.0/modules/content/">
+     xmlns:media="http://search.yahoo.com/mrss/"
   <channel>
     <itunes:type>episodic</itunes:type>
     <title>Deep Web Tech Stories: AI &amp; 2026 Trends</title>
@@ -22,33 +23,33 @@
       <itunes:email>eslammosde@gmail.com</itunes:email>
     </itunes:owner>
     <item>
-      <title><![CDATA[Unveiling the Shadows: A Deep Dive into the Dark Web]]></title> 
-      <description><![CDATA[Unveiling the Shadows is a podcast that explores the dark and investigative side of technology and economics. Join us as we delve into the world of cybercrime, ghost AI, and smart implants, and examine the implications of these phenomena on our digital lives.
+      <title><![CDATA[Unveiling the Shadows: Investigating Dark Web Threats]]></title> 
+      <description><![CDATA[Unveiling the Shadows is a podcast that explores the darker side of technology and its impact on society. From cybercrime to AI storytelling, we delve into the most pressing issues of our time.
 
 What's in this episode:
-- This story investigates the dark web groups targeting global remote workers, exposing the methods and motives behind these cyber threats.
-- This story explores the rise of ghost AI impersonating deceased users for profit, and the implications of this phenomenon on our digital lives.
-- This story analyzes the concept of virtual reputation scores in modern cities, and the potential risks and consequences of this system.
-- This story investigates the impact of 2026 smart implants on human privacy rights, and the potential risks and consequences of these implants.
+- This story investigates the rise of dark web groups targeting remote workers, compromising their personal and professional data.
+- This story explores the reasons behind the failure of 2026 quantum encryption to safeguard personal online banking data.
+- This story sheds light on the disturbing practice of using ghost AI to impersonate deceased users for financial gain.
+- This story analyzes the impact of virtual reputation scores on modern cities, and the dangers of relying on these systems to govern our lives.
 
 #2026 #AI #DeepWeb]]></description>
-      <content:encoded><![CDATA[Unveiling the Shadows is a podcast that explores the dark and investigative side of technology and economics. Join us as we delve into the world of cybercrime, ghost AI, and smart implants, and examine the implications of these phenomena on our digital lives.
+      <content:encoded><![CDATA[Unveiling the Shadows is a podcast that explores the darker side of technology and its impact on society. From cybercrime to AI storytelling, we delve into the most pressing issues of our time.
 
 What's in this episode:
-- This story investigates the dark web groups targeting global remote workers, exposing the methods and motives behind these cyber threats.
-- This story explores the rise of ghost AI impersonating deceased users for profit, and the implications of this phenomenon on our digital lives.
-- This story analyzes the concept of virtual reputation scores in modern cities, and the potential risks and consequences of this system.
-- This story investigates the impact of 2026 smart implants on human privacy rights, and the potential risks and consequences of these implants.
+- This story investigates the rise of dark web groups targeting remote workers, compromising their personal and professional data.
+- This story explores the reasons behind the failure of 2026 quantum encryption to safeguard personal online banking data.
+- This story sheds light on the disturbing practice of using ghost AI to impersonate deceased users for financial gain.
+- This story analyzes the impact of virtual reputation scores on modern cities, and the dangers of relying on these systems to govern our lives.
 
 #2026 #AI #DeepWeb]]></content:encoded>
-      <pubDate>Tue, 07 Apr 2026 17:10:51 +0000</pubDate>
-      <itunes:keywords>dark web, cybercrime, ghost AI, smart implants, online security, privacy, technology, economics, investigative journalism, podcast, news, current events, trending topics, social credit, neural hijack, virtual reputation scores, artificial intelligence, machine learning, cybersecurity</itunes:keywords>  <itunes:explicit>yes</itunes:explicit>
+      <pubDate>Tue, 07 Apr 2026 17:26:02 +0000</pubDate>
+      <itunes:keywords>Technology, Cybercrime, AI, Dark Web, Quantum Encryption, Ghost AI, Smart Implants, Human Privacy, Social Credit, Virtual Reputation, Uncertainty in AI, Artificial Intelligence, Cyber Syndicate, Free Fire, Atmospheric Weapon Systems</itunes:keywords>  <itunes:explicit>yes</itunes:explicit>
       <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>60</itunes:episode>
+      <itunes:episode>63</itunes:episode>
       <itunes:explicit>yes</itunes:explicit>
       <itunes:image href="https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/main/podcast_cover.jpg"/>
-      <enclosure url="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v60/episode.mp3" length="505728" type="audio/mpeg"/>
-      <guid isPermaLink="false">v60_1775581851</guid>
+      <enclosure url="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v63/episode.mp3" length="501120" type="audio/mpeg"/>
+      <guid isPermaLink="false">v63_1775582762</guid>
     </item>
   </channel>
 </rss>
