@@ -88,23 +88,34 @@ def update_rss(data, run_number):
     file_size = os.path.getsize("episode.mp3") if os.path.exists("episode.mp3") else "1024"
 
     # وسم الـ <title> دلوقتي هياخد actual_title المتغير
+  # إضافة وسم التصنيف الفرعي ووسوم التحسين
     rss_content = f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<rss version="2.0" 
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Deep Web Tech Stories: AI &amp; 2026 Trends</title>
     <link>https://familytvr.blogspot.com/</link>
     <description>Investigating the dark side of technology and 2026 innovations.</description>
     <language>en-us</language>
-    <itunes:category text="Technology"/>
+    <itunes:category text="Technology">
+      <itunes:category text="Tech News"/>
+    </itunes:category>
     <itunes:image href="{main_cover_url}"/>
+    <itunes:author>Eslam</itunes:author>
+    <itunes:explicit>yes</itunes:explicit>
+    <itunes:block>no</itunes:block> 
     <itunes:owner>
       <itunes:name>Eslam</itunes:name>
       <itunes:email>eslammosde@gmail.com</itunes:email>
     </itunes:owner>
     <item>
-      <title>{actual_title}</title> 
-      <description>{full_description}</description>
+      <title><![CDATA[{actual_title}]]></title> 
+      <description><![CDATA[{full_description}]]></description>
+      <content:encoded><![CDATA[{full_description}]]></content:encoded>
       <pubDate>{pub_date}</pubDate>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>{run_number}</itunes:episode>
       <itunes:explicit>yes</itunes:explicit>
       <itunes:image href="{main_cover_url}"/>
       <enclosure url="{audio_url}" length="{file_size}" type="audio/mpeg"/>
@@ -112,7 +123,6 @@ def update_rss(data, run_number):
     </item>
   </channel>
 </rss>"""
-
     with open("podcast.xml", "w", encoding="utf-8") as f:
         f.write(rss_content.strip())
 
