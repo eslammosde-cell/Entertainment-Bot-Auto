@@ -13,7 +13,6 @@ jobs:
     # الصلاحيات يجب أن تكون هنا، قبل الـ steps مباشرة وبنفس محاذاة runs-on
     permissions:
       contents: write
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
