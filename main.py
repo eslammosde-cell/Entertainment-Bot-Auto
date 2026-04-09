@@ -49,11 +49,11 @@ async def main():
     xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <atom:link href="https://eslammosde-cell/Entertainment-Bot-Auto/podcast.xml" rel="self" type="application/rss+xml" />
-    <title>The Economic Edge: Master Your Wealth</title>
+    <title>Chart Breakers & Star Stories</title>
     <link>https://familytvr.blogspot.com/</link>
     <language>en-us</language>
     <itunes:author>Family TVR</itunes:author>
-    <itunes:summary>Stop guessing with your money. While the world panics, the top 1% are positioning themselves for the biggest wealth transfer in history.</itunes:summary>
+    <itunes:summary>Did your favorite artist just break a record or a heart? The charts are screaming, and we have the inside story you won't hear anywhere else.</itunes:summary>
     <itunes:owner>
         <itunes:name>Eslam Tech</itunes:name>
         <itunes:email>eslammosde@gmail.com</itunes:email>
