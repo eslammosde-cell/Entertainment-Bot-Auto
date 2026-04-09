@@ -70,8 +70,10 @@ def update_rss(data, run_number):
     meta = data.get('metadata', {})
     # استخدام العنوان المستخرج من المقال
     actual_title = meta.get('youtube_title', f"Tech Update v{run_number}")
-    # أضف طابعاً زمنياً للـ GUID لضمان التغيير في كل مرة
-    guid = f"v{run_number}_{int(time.time())}"
+      # أضف التوقيت الحالي لضمان أن كل تشغيل ينتج ملفاً مختلفاً برمجياً
+    guid_value = f"v{run_number}_{int(time.time())}"
+# ثم استخدمه في النص
+    <guid isPermaLink="false">{guid_value}</guid>
     rss_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
