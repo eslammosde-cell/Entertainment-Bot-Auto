@@ -41,7 +41,7 @@ async def main():
     timestamp = int(time.time())
     audio_url = f"https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v{run_num}/episode.mp3"
     
-    rss_template = f"""<?xml version="1.0" encoding="UTF-8"?>
+   rss_template = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" 
     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
     xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -52,37 +52,36 @@ async def main():
     <link>https://familytvr.blogspot.com/</link>
     <language>en-us</language>
     <itunes:author>Family TVR</itunes:author>
+    <itunes:summary>Stop guessing with your money. While the world panics, the top 1% are positioning themselves for the biggest wealth transfer in history. Are you with them?</itunes:summary>
     <itunes:owner>
         <itunes:name>Eslam Tech</itunes:name>
         <itunes:email>eslammosde@gmail.com</itunes:email>
     </itunes:owner>
-    <itunes:image href="https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/main/assets/podcast_cover.jpg" />
-    <description>"Stop guessing with your money. While the world panics, the top 1% are positioning themselves for the biggest wealth transfer in history. Are you with them?"
-    The global economy is changing faster than ever. If you aren't staying informed, you're losing value every single day.
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/refs/heads/main/podcast_cover.jpg" />
+    <description><![CDATA[Stop guessing with your money. While the world panics, the top 1% are positioning themselves for the biggest wealth transfer in history.
+    
+The global economy is changing faster than ever. If you aren't staying informed, you're losing value every single day.
 
-This playlist is your ultimate Economic Survival Guide. We go beyond the surface-level news to bring you deep insights, market secrets, and actionable strategies that mainstream media won't tell you. Whether it’s a market crash or a sudden bull run, we help you turn volatility into opportunity.
+This podcast is your ultimate Economic Survival Guide. We go beyond the surface-level news to bring you deep insights, market secrets, and actionable strategies.
 
 Inside this Series, we cover:
+- Market Analysis
+- Inflation Protection
+- Wealth Strategies
+- Geopolitics & Money
 
-Market Analysis: Real-time updates on Gold, Stocks, and Global Currencies.
-
-Inflation Protection: Practical steps to keep your savings from disappearing.
-
-Wealth Strategies: How to spot "The Big Trade" before it happens.
-
-Geopolitics & Money: How global conflicts directly impact your bank account.
-
-Don't just watch the news—understand the game. Subscribe and hit the bell icon to stay ahead of the curve.
-
-
-#EconomyNews #MarketCrash #InvestmentStrategy #FinancialFreedom #GlobalMarkets #WealthProtection #EconomicCrisis2026</description>
-    <itunes:category text="Technology" />
+Subscribe to stay ahead of the curve.]]></description>
+    <itunes:category text="Business">
+        <itunes:category text="Investing"/>
+    </itunes:category>
     <item>
-        <title>{title}</title>
-        <description>{description}</description>
-        <pubDate>{datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")}</pubDate>
-        <enclosure url="{audio_url}" length="1048576" type="audio/mpeg"/>
-        <guid>v{run_num}_{timestamp}</guid>
+        <title>{{title}}</title>
+        <description>{{description}}</description>
+        <pubDate>{{datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")}}</pubDate>
+        <enclosure url="{{audio_url}}" length="1048576" type="audio/mpeg"/>
+        <guid>v{{run_num}}_{{timestamp}}</guid>
+        <itunes:explicit>no</itunes:explicit>
     </item>
 </channel>
 </rss>"""
