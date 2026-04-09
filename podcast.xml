@@ -1,23 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<rss version="2.0" 
+    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Chart Breakers & Star Stories</title>
+    <atom:link href="https://eslammosde-cell.github.io/Entertainment-Bot-Auto/podcast.xml" rel="self" type="application/rss+xml" />
+    <title>Chart Breakers &amp; Star Stories</title>
     <link>https://familytvr.blogspot.com/</link>
     <language>en-us</language>
     <itunes:author>Family TVR</itunes:author>
+    <itunes:summary>Did your favorite artist just break a record or a heart? The charts are screaming, and we have the inside story you won't hear anywhere else.</itunes:summary>
+    <itunes:owner>
+        <itunes:name>Eslam Tech</itunes:name>
+        <itunes:email>eslammosde@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:explicit>no</itunes:explicit>
     <itunes:image href="https://raw.githubusercontent.com/eslammosde-cell/Entertainment-Bot-Auto/refs/heads/main/podcast_cover.jpg" />
+    <description><![CDATA[The latest music trends, chart updates, and star stories from Billboard and beyond. Stay updated with the Pop Culture.]]></description>
+    <itunes:category text="Leisure">
+        <itunes:category text="Hobbies"/>
+    </itunes:category>
     <item>
-        <title>KATSEYE Put Their ‘Pinky Up’ and Go Hard in the Club in Video For Hyper Pop New Single: Watch</title>
-        <description>[Upbeat music plays in the background]
+        <title>Ziggy Marley Shares Why He Decided to Release His New Album Exclusively on Vinyl & CDs</title>
+        <description><![CDATA[[Intro music plays]
 
-Host: "Hey there, K-pop fans. Get ready for some exciting news. HYBE girl group KATSEYE just dropped their brand new single, 'Pink Up', and it's a beat-crazy track that's sure to get you moving. The song is particularly special because it's the first one without OG member Manon Bannerman, who's currently on temporary hiatus focusing on her health and well-being."
+Host: Welcome to this episode of Take Us Out, I'm your host Tetris Kelly, and today we're joined by the one and only Ziggy Marley. We're hanging out at Crossroads, a cozy vegan restaurant in Los Angeles, and we're digging into some amazing food and even better conversation.
 
-[Clip of "Pink Up" plays]
+[Soft music continues in the background]
 
-Host: "The hyper-pop song features fierce vocals from members Dani...</description>
-        <pubDate>Thu, 09 Apr 2026 17:16:26 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v3/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid>v3_1775754986</guid>
+Host: Ziggy, thanks for having me. I have to ask, how long have you been following a vegan diet?
+
+Ziggy Marley: [laughs] I'm only vegan part-time. I'm healthy all the time, but I'm vegan part-time.
+
+Host: [laughs] That's fair. So, let's talk about your new album, Brightside. You're releasing it in a pretty unconventional way. Can you tell us about that?
+
+Ziggy Marley: Yeah, I'm releasing it exclusively on vinyl on Record Store Day, April 18, and it won't be available digitally until May 1. I wanted to do it this way because I grew up seeing records being made, and I love the process and quality that goes into it.
+
+Host: That's really cool. What inspired you to take this approach?
+
+Ziggy Marley: Well, music is made so differently now. It's cheaper, easier, and faster. I wanted to make Brightside the slow way, like my dad used to make music.
+
+Host: You're also an avid vinyl collector. What's the most important record in your collection?
+
+Ziggy Marley: The first vinyl I ever bought, which was Thriller. It was the first time I had my own money, and I was like, "Yeah, I'm going to the record store and buying a record!"
+
+Host: That's awesome. Your new album, Brightside, is your most personal to date. What inspired you to be so honest in this project?
+
+Ziggy Marley: Being on set for my dad's biopic, Bob Marley: One Love, sparked some creativity for me. And I also took some time to reflect on why I was writing some sad songs. I realized that the state of the world can be oppressive, and the battle is how we free our minds from that.
+
+[Outro music starts playing]
+
+Host: Thanks for sharing that with us, Ziggy. It's been great having you on the show. Make sure to check out Brightside on Record Store Day, and we'll catch you all on the next episode of Take Us Out.
+
+[Outro music continues to play until the end]]]></description>
+        <pubDate>Thu, 09 Apr 2026 17:21:34 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v4/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v4_1775755294</guid>
+        <itunes:explicit>no</itunes:explicit>
+        <itunes:duration>00:05:00</itunes:duration>
     </item>
   </channel>
 </rss>
