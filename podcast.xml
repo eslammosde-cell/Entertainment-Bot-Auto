@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" 
-    xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
-    xmlns:content="http://purl.org/rss/1.0/modules/content/"
-    xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <atom:link href="https://eslamtechautomation-ctrl.github.io/TrustMask-Bot-main/podcast.xml" rel="self" type="application/rss+xml" />
-    <title>The Economic Edge: Master Your Wealth</title>
+    <title>Chart Breakers & Star Stories</title>
     <link>https://familytvr.blogspot.com/</link>
     <language>en-us</language>
     <itunes:author>Family TVR</itunes:author>
-    <itunes:summary>Stop guessing with your money. While the world panics, the top 1% are positioning themselves for the biggest wealth transfer in history.</itunes:summary>
-    <itunes:owner>
-        <itunes:name>Eslam Tech</itunes:name>
-        <itunes:email>eslammosde@gmail.com</itunes:email>
-    </itunes:owner>
-    <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/refs/heads/main/podcast_cover.jpg" />
-    <description><![CDATA[Stop guessing with your money. The global economy is changing faster than ever.]]></description>
-    <itunes:category text="Business">
-        <itunes:category text="Investing"/>
-    </itunes:category>
+    <itunes:image href="https://raw.githubusercontent.com/eslammosde-cell/Entertainment-Bot-Auto/refs/heads/main/podcast_cover.jpg" />
     <item>
-        <title>England has shown the world how to replace farm subsidies</title>
-        <description>"Discover how England is revolutionizing the farming industry by phasing out subsidies. Learn more about this groundbreaking approach and its potential to transform agriculture worldwide: https://www.economist.com/leaders/2026/03/26/england-has-shown-the-world-how-to-replace-farm-subsidies"</description>
-        <pubDate>Thu, 09 Apr 2026 16:18:19 +0000</pubDate>
-        <enclosure url="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v102/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid>v102_1775751499</guid>
-        <itunes:explicit>no</itunes:explicit>
+        <title>KATSEYE Put Their ‘Pinky Up’ and Go Hard in the Club in Video For Hyper Pop New Single: Watch</title>
+        <description>[Upbeat music plays in the background]
+
+Host: "Hey there, K-pop fans. Get ready for some exciting news. HYBE girl group KATSEYE just dropped their brand new single, 'Pink Up', and it's a beat-crazy track that's sure to get you moving. The song is particularly special because it's the first one without OG member Manon Bannerman, who's currently on temporary hiatus focusing on her health and well-being."
+
+[Clip of "Pink Up" plays]
+
+Host: "The hyper-pop song features fierce vocals from members Dani...</description>
+        <pubDate>Thu, 09 Apr 2026 17:16:26 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v3/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid>v3_1775754986</guid>
     </item>
-</channel>
+  </channel>
 </rss>
