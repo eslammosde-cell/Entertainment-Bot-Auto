@@ -5,3 +5,4 @@ atproto
 requests
 selenium
 webdriver-manager
+newspaper3k
