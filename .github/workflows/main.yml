@@ -44,7 +44,8 @@ jobs:
             git config --global user.name "GitHub Action"
             git config --global user.email "action@github.com"
             git add podcast.xml
-            git commit -m "Update RSS Feed v${{ github.run_number }}" || echo "No changes"
+            # إضافة --allow-empty أو استخدام رسالة متغيرة تضمن تنفيذ الـ commit
+            git commit -m "Update RSS: v${{ github.run_number }} - $(date)" || echo "No changes to commit"
             git push origin main
           
       - name: Save Episode to Releases
