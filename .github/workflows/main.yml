@@ -22,8 +22,8 @@ jobs:
         run: |
           git config --global user.name "Action"
           git config --global user.email "action@github.com"
-          git add podcast.xml
-          git commit -m "Update RSS $(date)" || echo "No changes"
+          git add .  # أضف كل شيء تم إنشاؤه (بما في ذلك podcast.xml الجديد)
+          git commit -m "Auto Update RSS" || echo "No changes"
           git push origin main
       - name: Release
         uses: softprops/action-gh-release@v1
