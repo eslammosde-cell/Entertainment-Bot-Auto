@@ -14,7 +14,7 @@ client = Groq(api_key=GROQ_API_KEY)
 
 async def main():
     # 1. جلب المقالات من بلوجر
-    rss_url = "https://www.economist.com/latest/rss.xml"
+    rss_url = "https://www.billboard.com/feed/"
     feed = feedparser.parse(rss_url)
     if not feed.entries: return
 
@@ -39,7 +39,7 @@ async def main():
     # 4. إنشاء ملف RSS (حتى لو حذف يحيا من جديد)
     run_num = os.getenv("GITHUB_RUN_NUMBER", "1")
     timestamp = int(time.time())
-    audio_url = f"https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v{run_num}/episode.mp3"
+    audio_url = f"https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v{run_num}/episode.mp3"
     # تأكد أن هذا السطر يبدأ بنفس مستوى المسافات للأسطر السابقة في الكود الخاص بك
    # تأكد أن هذا السطر يبدأ بنفس مستوى المسافات للأسطر السابقة في الكود الخاص بك
     rss_template = f"""<?xml version="1.0" encoding="UTF-8"?>
@@ -48,7 +48,7 @@ async def main():
     xmlns:content="http://purl.org/rss/1.0/modules/content/"
     xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="https://eslamtechautomation-ctrl.github.io/TrustMask-Bot-main/podcast.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://eslammosde-cell/Entertainment-Bot-Auto/podcast.xml" rel="self" type="application/rss+xml" />
     <title>The Economic Edge: Master Your Wealth</title>
     <link>https://familytvr.blogspot.com/</link>
     <language>en-us</language>
@@ -59,7 +59,7 @@ async def main():
         <itunes:email>eslammosde@gmail.com</itunes:email>
     </itunes:owner>
     <itunes:explicit>no</itunes:explicit>
-    <itunes:image href="https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/refs/heads/main/podcast_cover.jpg" />
+    <itunes:image href="https://raw.githubusercontent.com/eslammosde-cell/Entertainment-Bot-Auto/refs/heads/main/podcast_cover.jpg" />
     <description><![CDATA[Stop guessing with your money. The global economy is changing faster than ever.]]></description>
     <itunes:category text="Business">
         <itunes:category text="Investing"/>
