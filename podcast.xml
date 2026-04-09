@@ -1,21 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>Family TVR Tech Podcast</title>
-    <link>https://familytvr.blogspot.com/2026/04/tech-entertainment-unveiling-secrets-of_01329446454.html</link>
-    <description>Latest updates from familytvr.blogspot.com</description>
+    <title>Family TVR Tech News</title>
+    <link>https://familytvr.blogspot.com/</link>
+    <language>en-us</language>
+    <itunes:author>Family TVR</itunes:author>
+    <itunes:owner>
+      <itunes:name>Family TVR Team</itunes:name>
+      <itunes:email>eslammosde@gmail.com</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Technology">
+      <itunes:category text="Tech News"/>
+    </itunes:category>
     <itunes:image href="https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/main/podcast_cover.jpg"/>
+    <description>Latest tech updates and guides from Family TVR.</description>
     <item>
-      <title><![CDATA[Tech Update v73]]></title> 
-      <description><![CDATA[
-
-🔗 Full Technical Guide: https://familytvr.blogspot.com/2026/04/tech-entertainment-unveiling-secrets-of_01329446454.html
-
-#Tech #Android #FamilyTVR]]></description>
-      <pubDate>Thu, 09 Apr 2026 07:42:51 +0000</pubDate>
-      <itunes:keywords>Tech, Android</itunes:keywords>
-      <enclosure url="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v73/episode.mp3" length="1024" type="audio/mpeg"/>
-      <guid isPermaLink="false">v73_1775720571</guid>
+      <title><![CDATA[Tech Insights v78]]></title>
+      <description><![CDATA[Explore the secrets of Bermuda in Free Fire Lore, a battle royale game that combines suspense, action, and historical context.]]></description>
+      <pubDate>Thu, 09 Apr 2026 08:06:52 +0000</pubDate>
+      <itunes:keywords>Tech, Entertainment, Gaming, Free Fire</itunes:keywords>
+      <enclosure url="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v78/episode.mp3" length="1048576" type="audio/mpeg"/>
+      <guid isPermaLink="false">v78_1775722012</guid>
+      <itunes:explicit>no</itunes:explicit>
     </item>
   </channel>
 </rss>
