@@ -9,6 +9,8 @@ on:
 jobs:
   automate:
     runs-on: ubuntu-latest
+    
+    # الصلاحيات يجب أن تكون هنا، قبل الـ steps مباشرة وبنفس محاذاة runs-on
     permissions:
       contents: write
       releases: write
@@ -25,7 +27,7 @@ jobs:
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser groq edge-tts 
+          pip install feedparser groq edge-tts
           
       - name: Install Dependencies
         run: pip install groq edge-tts selenium webdriver-manager
