@@ -13,19 +13,20 @@ from datetime import datetime, timezone
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=GROQ_API_KEY)
 
-# 1. وظيفة جلب مقال عشوائي غير مكرر
-def get_random_blog_post():
+def get_smart_blog_post():
     rss_url = "https://familytvr.blogspot.com/feeds/posts/default?alt=rss&max-results=50"
     feed = feedparser.parse(rss_url)
     
     if not feed.entries:
         return None
 
-    # نختار مقالاً عشوائياً من آخر 50 مقال لضمان عدم التكرار المستمر
+    # منطق الاختيار: نختار مقالاً عشوائياً من آخر 50 مقال لضمان التنوع
+    # هذا يضمن أنه حتى لو لم تنشر مقالاً جديداً، سيختار البوت مقالاً سابقاً ويعيد صياغته
     entry = random.choice(feed.entries)
     
+    # التأكد من سحب المحتوى بشكل صحيح من بلوجر
     raw_content = entry.get('content', [{}])[0].get('value', entry.get('summary', ''))
-    clean_text = re.sub('<[^<]+?>', '', raw_content)
+    clean_text = re.sub('<[^<]+?>', '', raw_content) # تنظيف HTML
     
     return {
         "title": entry.title,
@@ -34,16 +35,18 @@ def get_random_blog_post():
     }
 
 async def generate_content(blog_data):
-    # الموجه التقني الاحترافي (بدون غموض)
+    # الموجه يركز على المحتوى التقني لمدونتك familytvr.blogspot.com
     prompt = f"""
-    Role: Tech Content Specialist.
+    Role: Professional Tech Content Creator.
+    Task: Convert this blog article into a viral 4-segment YouTube script.
     Topic: {blog_data['title']}
-    Source: {blog_data['content']}
+    Source Content: {blog_data['content']}
     
-    Task: Produce a viral YouTube script in JSON.
-    1. 4 unique segments explaining the technology.
-    2. Professional and engaging tone for US/Europe markets.
-    3. Metadata: catchy title, SEO description, and 20 tags.
+    Instructions:
+    1. Tone: Professional, informative, and educational (No dark/mystery themes).
+    2. Format: Output ONLY a JSON object.
+    3. Promotion: Mention visiting {blog_data['link']} for the full technical guide.
+    4. Metadata: Provide a viral 'youtube_title', SEO 'description', and 20 'tags'.
     """
     completion = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
@@ -58,33 +61,31 @@ def update_rss(data, run_number, blog_link):
     cover_url = "https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/main/podcast_cover.jpg"
     
     meta = data.get('metadata', {})
-    actual_title = meta.get('youtube_title', f"Tech Insight v{run_number}")
-    tags = ", ".join(meta.get('tags', ["Tech", "Android"]))
+    actual_title = meta.get('youtube_title', f"Tech Update v{run_number}")
+    tags_string = ", ".join(meta.get('tags', ["Tech", "Software", "Android"]))
     
-    # إضافة بيانات يوتيوب المطلوبة (الإيميل، المالك، التصنيف الدقيق)
+    # إضافة البيانات المطلوبة ليوتيوب (الإيميل، المالك، التصنيف)
     rss_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Family TVR Official Podcast</title>
+    <title>Family TVR Tech Insights</title>
     <link>https://familytvr.blogspot.com/</link>
     <language>en-us</language>
-    <copyright>Family TVR 2026</copyright>
-    <itunes:author>Family TVR Team</itunes:author>
+    <itunes:author>Family TVR</itunes:author>
     <itunes:owner>
-      <itunes:name>Eslam Technology</itunes:name>
+      <itunes:name>Family TVR Admin</itunes:name>
       <itunes:email>eslammosde@gmail.com</itunes:email>
     </itunes:owner>
     <itunes:category text="Technology">
       <itunes:category text="Tech News"/>
     </itunes:category>
     <itunes:image href="{cover_url}"/>
-    <description>Your daily source for software updates and tech guides.</description>
+    <description>Latest tech updates, software reviews, and guides from Family TVR.</description>
     <item>
       <title><![CDATA[{actual_title}]]></title>
-      <itunes:author>Family TVR</itunes:author>
       <description><![CDATA[{meta.get('description', '')}]]></description>
       <pubDate>{pub_date}</pubDate>
-      <itunes:keywords>{tags}</itunes:keywords>
+      <itunes:keywords>{tags_string}</itunes:keywords>
       <enclosure url="{audio_url}" length="1048576" type="audio/mpeg"/>
       <guid isPermaLink="false">v{run_number}_{int(time.time())}</guid>
       <itunes:explicit>no</itunes:explicit>
@@ -95,20 +96,23 @@ def update_rss(data, run_number, blog_link):
         f.write(rss_content.strip())
 
 async def main():
-    blog_data = get_random_blog_post()
+    print("📡 Fetching blog data...")
+    blog_data = get_smart_blog_post()
     if not blog_data: return
 
+    print(f"🤖 Processing: {blog_data['title']}")
     data = await generate_content(blog_data)
     run_num = os.getenv("GITHUB_RUN_NUMBER", "1")
     full_script = "\n\n".join([s.get('content', '') for s in data.get('stories', [])])
 
-    print(f"🎙️ Creating Audio for: {blog_data['title']}")
-    communicate = edge_tts.Communicate(full_script, "en-US-ChristopherNeural")
-    await communicate.save("episode.mp3")
-
-    if os.path.exists("episode.mp3") and os.path.getsize("episode.mp3") > 0:
-        update_rss(data, run_num, blog_data['link'])
-        print(f"✅ RSS Updated with YouTube requirements.")
+    if len(full_script.strip()) > 50:
+        print("🎙️ Generating Audio...")
+        communicate = edge_tts.Communicate(full_script, "en-US-ChristopherNeural")
+        await communicate.save("episode.mp3")
+        
+        if os.path.exists("episode.mp3") and os.path.getsize("episode.mp3") > 0:
+            update_rss(data, run_num, blog_data['link'])
+            print(f"✅ RSS & Audio Ready for: {blog_data['title']}")
 
 if __name__ == "__main__":
     asyncio.run(main())
