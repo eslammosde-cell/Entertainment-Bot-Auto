@@ -1,3 +1,4 @@
+feedparser
 groq
 edge-tts
 atproto
