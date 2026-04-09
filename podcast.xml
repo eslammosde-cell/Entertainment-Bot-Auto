@@ -1,55 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" 
-     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
-     xmlns:content="http://purl.org/rss/1.0/modules/content/">
-     xmlns:media="http://search.yahoo.com/mrss/"
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <itunes:type>episodic</itunes:type>
-    <title>Deep Web Tech Stories: AI &amp; 2026 Trends</title>
-    <link>https://familytvr.blogspot.com/</link>
-    <description>Investigating the dark side of technology and 2026 innovations.</description>
-   <language>en-us</language>
-    <itunes:category text="Music"/>
-    <itunes:category text="Technology"/>
-    <itunes:category text="News">
-      <itunes:category text="Tech News"/>
-    </itunes:category>
+    <title>Family TVR Tech Podcast</title>
+    <link>https://familytvr.blogspot.com/2026/04/tech-entertainment-unveiling-secrets-of_01329446454.html</link>
+    <description>Latest updates from familytvr.blogspot.com</description>
     <itunes:image href="https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/main/podcast_cover.jpg"/>
-    <itunes:author>Broadcast4u</itunes:author>
-    <itunes:explicit>yes</itunes:explicit>
-    <itunes:block>no</itunes:block> 
-    <itunes:owner>
-      <itunes:name>Broadcast4u</itunes:name>
-      <itunes:email>eslammosde@gmail.com</itunes:email>
-    </itunes:owner>
     <item>
-      <title><![CDATA[Unveiling The Shadows: Investigating Cyber Threats]]></title> 
-      <description><![CDATA[Investigative journalism into cyber threats, AI impersonations, and compromised privacy rights. Explore the dark world of cyber syndicates, ghost AI, and smart implant technologies.
+      <title><![CDATA[Tech Update v73]]></title> 
+      <description><![CDATA[
 
-What's in this episode:
-- This story investigates the dark web groups targeting global remote workers, exposing the secrets behind their operations and the threats they pose.
-- This story explores how ghost AI is impersonating deceased users for profit, highlighting the alarming rise of digital identity theft and its implications.
-- This story examines how 2026 smart implants are compromising human privacy rights, discussing the implications of neural interface technologies on personal autonomy.
-- This story reveals the secret origins of Free Fire's atmospheric weapon systems, diving into the game's lore and the science behind its weapon mechanics.
+🔗 Full Technical Guide: https://familytvr.blogspot.com/2026/04/tech-entertainment-unveiling-secrets-of_01329446454.html
 
-#2026 #AI #DeepWeb]]></description>
-      <content:encoded><![CDATA[Investigative journalism into cyber threats, AI impersonations, and compromised privacy rights. Explore the dark world of cyber syndicates, ghost AI, and smart implant technologies.
-
-What's in this episode:
-- This story investigates the dark web groups targeting global remote workers, exposing the secrets behind their operations and the threats they pose.
-- This story explores how ghost AI is impersonating deceased users for profit, highlighting the alarming rise of digital identity theft and its implications.
-- This story examines how 2026 smart implants are compromising human privacy rights, discussing the implications of neural interface technologies on personal autonomy.
-- This story reveals the secret origins of Free Fire's atmospheric weapon systems, diving into the game's lore and the science behind its weapon mechanics.
-
-#2026 #AI #DeepWeb]]></content:encoded>
-      <pubDate>Wed, 08 Apr 2026 23:10:40 +0000</pubDate>
-      <itunes:keywords>cyber threats, remote workers, ghost AI, digital identity theft, smart implants, privacy rights, neural interface, Free Fire, atmospheric weapon systems, game lore, science and technology, investigative journalism, dark web, AI ethics, personal autonomy, data privacy, surveillance, neural manipulation</itunes:keywords>  <itunes:explicit>yes</itunes:explicit>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:episode>69</itunes:episode>
-      <itunes:explicit>yes</itunes:explicit>
-      <itunes:image href="https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/main/podcast_cover.jpg"/>
-      <enclosure url="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v69/episode.mp3" length="430272" type="audio/mpeg"/>
-      <guid isPermaLink="false">v69_1775689840</guid>
+#Tech #Android #FamilyTVR]]></description>
+      <pubDate>Thu, 09 Apr 2026 07:42:51 +0000</pubDate>
+      <itunes:keywords>Tech, Android</itunes:keywords>
+      <enclosure url="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v73/episode.mp3" length="1024" type="audio/mpeg"/>
+      <guid isPermaLink="false">v73_1775720571</guid>
     </item>
   </channel>
 </rss>
