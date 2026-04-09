@@ -4,7 +4,7 @@
     xmlns:content="http://purl.org/rss/1.0/modules/content/"
     xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <atom:link href="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/blob/main/podcast.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://eslamtechautomation-ctrl.github.io/TrustMask-Bot-main/podcast.xml" rel="self" type="application/rss+xml" />
     <title>The Economic Edge: Master Your Wealth</title>
     <link>https://familytvr.blogspot.com/</link>
     <language>en-us</language>
@@ -35,11 +35,11 @@ Don't just watch the news—understand the game. Subscribe and hit the bell icon
 #EconomyNews #MarketCrash #InvestmentStrategy #FinancialFreedom #GlobalMarkets #WealthProtection #EconomicCrisis2026</description>
     <itunes:category text="Technology" />
     <item>
-        <title>Blighty newsletter: Reform in the land of Alan Partridge</title>
-        <description>"Get the latest on British politics and culture with our Blighty newsletter. In this edition, we explore the winds of reform sweeping the land that inspired Alan Partridge. Read the full article here: https://www.economist.com/britain/2026/04/07/blighty-newsletter-reform-in-the-land-of-alan-partridge"</description>
-        <pubDate>Thu, 09 Apr 2026 15:24:28 +0000</pubDate>
-        <enclosure url="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v94/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid>v94_1775748268</guid>
+        <title>The crew of Artemis II are returning to a planet they have cheered up</title>
+        <description>"The Artemis II crew is making history with their return to a planet they've brought joy to. Read more about their incredible mission: https://www.economist.com/leaders/2026/04/07/the-crew-of-artemis-ii-are-returning-to-a-planet-they-have-cheered-up"</description>
+        <pubDate>Thu, 09 Apr 2026 15:33:00 +0000</pubDate>
+        <enclosure url="https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v95/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid>v95_1775748780</guid>
     </item>
 </channel>
 </rss>
