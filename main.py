@@ -21,39 +21,33 @@ def get_smart_blog_post():
     entry = random.choice(feed.entries)
     raw_content = entry.content[0].value if 'content' in entry else entry.summary
     
-    # استخراج كافة الروابط الموجودة في المقال قبل تنظيف الـ HTML
+    # 1. استخراج الروابط (جوجل بلاي أو روابط التحميل)
     links = re.findall(r'href="(http[s]?://[^"]+)"', raw_content)
-    # تصفية الروابط لاستخراج روابط جوجل بلاي أو روابط التحميل فقط
-    app_links = [l for l in links if 'play.google' in l or 'bit.ly' in l or 'apk' in l]
-    app_link = app_links[0] if app_links else entry.link
+    app_link = next((l for l in links if 'play.google' in l or 'bit.ly' in l), entry.link)
 
-    # استخراج الهاشتاجات الموجودة في نص المقال الأصلي
-    original_hashtags = re.findall(r'#\w+', raw_content)
+    # 2. استخراج الهاشتاجات الأصلية من المقال
+    original_hashtags = " ".join(re.findall(r'#\w+', raw_content))
     
     clean_text = re.sub('<[^<]+?>', '', raw_content) 
 
     return {
         "title": entry.title, 
         "content": clean_text[:4000], 
-        "link": app_link, # استخدام رابط التطبيق المكتشف
-        "original_tags": " ".join(original_hashtags)
+        "link": app_link, 
+        "hashtags": original_hashtags
     }
 
 async def generate_content(blog_data):
-    # إجبار الذكاء الاصطناعي على استخدام بيانات المقال الأصلية
+    # إجبار الذكاء الاصطناعي على استخدام العنوان والوصف الأصلي
     prompt = f"""
-    Role: Professional Tech Video Scriptwriter.
-    Original Blog Title: {blog_data['title']}
-    Original Hashtags: {blog_data['original_tags']}
-    App/Source Link: {blog_data['link']}
-    Content Source: {blog_data['content']}
+    Create a YouTube script in JSON for: {blog_data['title']}
+    App Link: {blog_data['link']}
+    Original Tags: {blog_data['hashtags']}
     
-    Strict Task:
-    1. Use the "Original Blog Title" as the 'youtube_title'.
-    2. The 'description' MUST start with a summary of the article, followed by: "Download/Access here: {blog_data['link']}".
-    3. Include these original hashtags in the description: {blog_data['original_tags']}.
-    4. Create 4 engaging audio segments (English) for the video script.
-    5. Output ONLY a valid JSON object.
+    Rules:
+    - youtube_title must be: {blog_data['title']}
+    - description must include the App Link and Original Tags.
+    - Create 4 segments for audio.
     """
     completion = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
@@ -62,35 +56,26 @@ async def generate_content(blog_data):
     )
     return json.loads(completion.choices[0].message.content)
 
-def update_rss(data, run_number):
+def update_rss(data, run_number, blog_data):
+    timestamp = int(time.time())
     pub_date = datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")
     audio_url = f"https://github.com/eslamtechautomation-ctrl/TrustMask-Bot-main/releases/download/v{run_number}/episode.mp3"
-    cover_url = "https://raw.githubusercontent.com/eslamtechautomation-ctrl/TrustMask-Bot-main/main/podcast_cover.jpg"
     
     meta = data.get('metadata', {})
-    # استخدام العنوان المستخرج من المقال
-    actual_title = meta.get('youtube_title', f"Tech Update v{run_number}")
-      # أضف التوقيت الحالي لضمان أن كل تشغيل ينتج ملفاً مختلفاً برمجياً
-    guid_value = f"v{run_number}_{int(time.time())}"
-# ثم استخدمه في النص
-    <guid isPermaLink="false">{guid_value}</guid>
+    # استخدام العنوان المستخرج من المقال مباشرة
+    actual_title = blog_data['title']
+    
+    # كتابة الـ RSS بشكل نصي صحيح لتجنب SyntaxError
     rss_content = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
   <channel>
-    <title>Family TVR Official Podcast</title>
-    <itunes:owner>
-      <itunes:name>Family TVR Admin</itunes:name>
-      <itunes:email>eslammosde@gmail.com</itunes:email>
-    </itunes:owner>
-    <itunes:category text="Technology"/>
-    <itunes:image href="{cover_url}"/>
-    <language>en-us</language>
+    <title>Family TVR News</title>
     <item>
       <title><![CDATA[{actual_title}]]></title>
       <description><![CDATA[{meta.get('description', '')}]]></description>
       <pubDate>{pub_date}</pubDate>
       <enclosure url="{audio_url}" length="1048576" type="audio/mpeg"/>
-      <guid isPermaLink="false">v{run_number}</guid>
+      <guid isPermaLink="false">v{run_number}_{timestamp}</guid>
     </item>
   </channel>
 </rss>"""
@@ -112,8 +97,8 @@ async def main():
         await communicate.save("episode.mp3")
         
         if os.path.exists("episode.mp3") and os.path.getsize("episode.mp3") > 0:
-            update_rss(data, run_num)
-            print(f"✅ RSS Updated using original title: {blog_data['title']}")
+            update_rss(data, run_num, blog_data)
+            print(f"✅ Success: {blog_data['title']}")
 
 if __name__ == "__main__":
     asyncio.run(main())
