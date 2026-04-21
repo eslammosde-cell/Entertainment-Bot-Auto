@@ -21,29 +21,31 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Justin Bieber’s 12-Year-Old ‘Journals’ Album Debuts on Billboard 200 After Coachella</title>
-        <description><![CDATA[[Intro music fades out]
+        <title>Tim Cook Stepping Down as Apple CEO</title>
+        <description><![CDATA[[Intro music plays]
 
-Host: Welcome to our music update. We've got some exciting news from the world of Billboard. Justin Bieber is making waves on the Billboard 200 chart, with not one, not two, but seven albums currently on the list. Let's dive into the details.
+Host: Welcome to our show, where we bring you the latest news and trends. Today, we're talking about a major change at one of the world's most iconic companies: Apple. After nearly 15 years at the helm, CEO Tim Cook is stepping down.
 
-[Short music transition]
+[Soft music transitions in the background]
 
-Host: The surprise entry is his 2013 album "Journals", which debuts at number 111 with nearly 13,000 equivalent album units earned in the US. This is the first time the album has had enough activity to chart in a single week. The album was originally released exclusively on iTunes, but now it's widely available on all digital platforms and even on CD and vinyl.
+Host: Cook, who's 65, will be passing the torch to John Ternus, Apple's head of hardware engineering, on September 1st. But don't worry, Cook isn't going far - he'll remain involved with the company as executive chairman. This move is similar to what we've seen with other tech giants, like Amazon's Jeff Bezos and Netflix's Reed Hastings.
 
-[Short music transition]
+[Short audio clip of a news soundbite]
 
-Host: But that's not all - five more of Bieber's albums have re-entered the chart, including "Purpose", "Believe", "My World 2.0", "Justice", and "My World". And his most recent album, "SWAG", has zoomed up to number 7 with 43,000 equivalent album units earned. This surge in activity comes after his headlining performances at Coachella, which were livestreamed on YouTube.
+Host: Cook reflected on his time as CEO, saying, "It has been the greatest privilege of my life to be the CEO of Apple... I love Apple with all of my being." Ternus, who's been with Apple for 25 years, expressed his gratitude for the opportunity to lead the company forward.
 
-[Short music transition]
+[Music transitions to a slightly more upbeat tone]
 
-Host: So, what does this mean for Bieber's music career? With seven albums on the Billboard 200 at the same time, he's broken his own record for the most titles on the chart concurrently. We'll be keeping an eye on how his catalog performs in the coming weeks, especially with the second weekend of Coachella just wrapped up.
+Host: This change comes at a crucial time for Apple, as the company navigates the rapidly evolving world of artificial intelligence. Apple has faced some challenges in this area, but with Ternus at the helm, the company is poised to make some exciting moves.
 
-[Outro music starts]
+[Outro music starts playing]
 
-Host: That's all for now. Thanks for tuning in to our music update. The latest Billboard 200 chart will be posted on their website on April 21, so be sure to check it out for the full list of top albums. Until next time, stay musical! [Outro music continues to play until the end]]]></description>
-        <pubDate>Tue, 21 Apr 2026 03:18:52 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v72/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v72_1776741532</guid>
+Host: That's all for today. Thanks for tuning in to our show. We'll be keeping an eye on Apple's next chapter under John Ternus' leadership. Until next time, stay informed and stay curious.
+
+[Outro music continues to play until the end]]]></description>
+        <pubDate>Tue, 21 Apr 2026 08:01:42 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v73/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v73_1776758502</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
