@@ -21,29 +21,27 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Allison Jones Named EVP of A&R at Big Machine Records/Nashville Harbor Records & Entertainment</title>
+        <title>Billboard’s Music Industry Events Calendar</title>
         <description><![CDATA[[Intro music plays]
 
-Host: Welcome to the latest music industry update. We've got some exciting news from Big Machine Records and Nashville Harbor Records & Entertainment. The label has just appointed Allison Jones as Executive VP of A&R.
+Host: "Welcome to our podcast, where we bring you the latest updates from the music industry. Today, we're talking about a new feature on Billboard Pro that's going to make it easier for you to stay on top of all the major music industry events.
 
 [Short music transition]
 
-Host: Jones is a seasoned industry veteran who's been with Big Machine since 2008. During her time at the label, she's played a crucial role in signing top artists like Thomas Rhett, Florida Georgia Line, and Riley Green, and has contributed to the success of superstars like Tim McGraw, Lady A, and Taylor Swift.
+Host: "Billboard Pro has just launched a music industry events calendar, covering everything from conferences to festivals, and even networking mixers. This calendar is set to become the ultimate guide to what's happening in the music industry, both nationally and internationally.
+
+[Short pause]
+
+Host: "We've taken a sneak peek at the calendar, and it's already filling up with exciting events. For example, the globalFEST winter festival is happening on January 17th, 2027, in New York. And that's just the beginning - the calendar stretches all the way from April 2026 to March 2028.
 
 [Short music transition]
 
-Host: Jones has a long history with Big Machine founder Scott Borchetta, dating back to 1997 when they launched DreamWorks Nashville together. In a statement, Jones expressed her pride in the music they've created and her excitement to take on this new role.
+Host: "If you're an event organizer, you can get your event listed on the calendar by reaching out to joe.maimone@billboard.com. That's all for today - thanks for tuning in, and don't forget to check out the new events calendar on Billboard Pro for all the latest music industry happenings."
 
-[Short music transition]
-
-Host: Borchetta himself praised Jones, calling her the "consummate A&R executive" who's always on top of the latest trends and music. He credits her with being instrumental in shaping the label into what it is today.
-
-[Outro music plays]
-
-Host: That's the latest from the music industry. Allison Jones is set to lead A&R efforts at Big Machine Records and Nashville Harbor Records & Entertainment, working with a impressive roster of artists including Rascal Flatts, The Band Perry, and Aaron Lewis. We'll be keeping an eye on what's next for this powerhouse team. Thanks for tuning in!]]></description>
-        <pubDate>Sat, 25 Apr 2026 05:18:38 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v102/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v102_1777094318</guid>
+[Outro music plays]]]></description>
+        <pubDate>Sat, 25 Apr 2026 07:25:44 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v103/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v103_1777101944</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
