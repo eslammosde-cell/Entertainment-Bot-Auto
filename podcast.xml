@@ -21,27 +21,31 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Billboard’s Music Industry Events Calendar</title>
+        <title>Jimmy Barnes, INXS Lead Tributes to James Valentine Following Death at 64</title>
         <description><![CDATA[[Intro music plays]
 
-Host: "Welcome to our podcast, where we bring you the latest updates from the music industry. Today, we're talking about a new feature on Billboard Pro that's going to make it easier for you to stay on top of all the major music industry events.
+Host: "Welcome to our podcast, where we're taking a moment to remember a legendary figure in Australian music and media. James Valentine, a talented saxophonist and longtime broadcaster, has passed away at the age of 64. Let's take a look at his incredible career and the tributes that are pouring in from across the industry."
 
-[Short music transition]
+[Soft music transitions in]
 
-Host: "Billboard Pro has just launched a music industry events calendar, covering everything from conferences to festivals, and even networking mixers. This calendar is set to become the ultimate guide to what's happening in the music industry, both nationally and internationally.
+Host: "James Valentine was best known for his work with the band Models, and later as a broadcaster with the Australian Broadcasting Corporation. He worked with some of Australia's biggest names, including Jimmy Barnes and Iva Davies from Icehouse. In fact, Iva Davies shared a heartfelt statement, remembering James as a 'great musician' who played saxophone on Icehouse's Code Blue album."
 
-[Short pause]
+[Quick music clip from Icehouse's Code Blue album plays]
 
-Host: "We've taken a sneak peek at the calendar, and it's already filling up with exciting events. For example, the globalFEST winter festival is happening on January 17th, 2027, in New York. And that's just the beginning - the calendar stretches all the way from April 2026 to March 2028.
+Host: "Jimmy Barnes also paid tribute, sharing a touching message on social media. He remembered James as a 'funny and insightful interviewer' and said he'll miss hearing his 'gentle voice' on ABC radio every afternoon."
 
-[Short music transition]
+[Short music clip from Models' Out of Mind, Out of Sight plays]
 
-Host: "If you're an event organizer, you can get your event listed on the calendar by reaching out to joe.maimone@billboard.com. That's all for today - thanks for tuning in, and don't forget to check out the new events calendar on Billboard Pro for all the latest music industry happenings."
+Host: "James Valentine's music career spanned multiple decades, with his work on Models' Out of Mind, Out of Sight, even peaking at number 84 on the Billboard 200 chart. He also toured and recorded with other notable Australian acts, including INXS, who shared their own tribute to James, remembering him as an 'incredible musician and an amazing human'."
 
-[Outro music plays]]]></description>
-        <pubDate>Sat, 25 Apr 2026 07:25:44 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v103/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v103_1777101944</guid>
+[Outro music starts playing]
+
+Host: "James Valentine's legacy will be deeply felt across the Australian music and media industries. Our thoughts are with his family and loved ones during this difficult time. Thanks for joining us today as we reflect on the life and career of this talented musician and broadcaster."
+
+[Outro music continues to play until the end]]]></description>
+        <pubDate>Sat, 25 Apr 2026 09:57:03 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v104/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v104_1777111023</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
