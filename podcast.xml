@@ -21,29 +21,29 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Jack Johnson Announces AU/NZ Dates With Ben Harper and John Butler</title>
-        <description><![CDATA[[Intro music plays]
+        <title>Taylor Swift BOTS Case, Tupac Shakur Lawsuit, Spotify ‘Payola’ Ruling & More Top Music Law News</title>
+        <description><![CDATA[[Intro music fades out]
 
-Host: "Welcome to this week's music update. We've got some exciting news for fans in Australia and New Zealand. Jack Johnson has just announced a six-date tour, kicking off in November, and he's bringing some special guests along for the ride."
+Host: Welcome to The Legal Beat, your weekly dose of music law news and updates. I'm your host, and today we're diving into a fascinating case that's making waves in the industry.
+
+[Soft music plays in the background]
+
+Host: You know how Congress loves a good "backronym" – forcing words into a catchy acronym for new legislation? Well, it turns out that creative branding doesn't always hold up in court. A recent ruling on the federal BOTS Act, which aims to regulate online ticket sales, is a perfect example.
+
+[Short pause]
+
+Host: The Federal Trade Commission sued ticket broker Key Investment Group for violating the BOTS Act by using "illegal means" to purchase over 379,000 event tickets, including thousands for Taylor Swift's Eras Tour. But here's the twist: the judge ruled that the BOTS Act applies to "any person", not just automated crawlers or "bots". In fact, the judge said that courts can't rely on a statute's name or acronym to determine its meaning.
 
 [Short music transition]
 
-Host: "Johnson will be joined by Ben Harper and John Butler, who will both perform solo and acoustic sets. The tour, called the SURFILMUSIC 2026 Australia & New Zealand Tour, will hit cities like Brisbane, Perth, Sydney, and Melbourne, before wrapping up in North Canterbury, New Zealand on November 22nd."
+Host: This ruling has significant implications for the music industry, where ticket sales and licensing agreements are a big deal. It's a reminder that the law is not always as straightforward as it seems, and that clever acronyms can't replace clear legislation.
 
-[Short music transition]
+[Outro music starts playing]
 
-Host: "This tour marks Johnson's first return to Australia and New Zealand since 2022, and it's all part of the celebration of his new documentary soundtrack, which drops on May 15th. The documentary itself premiered at SXSW in March and explores Johnson's journey from surfer to filmmaker to musician."
-
-[Short music transition]
-
-Host: "Fans can expect to hear some of Johnson's classic hits, like 'Better Together' and 'Sitting, Waiting, Wishing', as well as some new material from the soundtrack. And with the addition of Harper and Butler, this is definitely a tour you won't want to miss. Tickets go on sale on May 12th, so mark your calendars."
-
-[Outro music plays]
-
-Host: "That's all for this week. Thanks for tuning in, and we'll catch you on the next one."]]></description>
-        <pubDate>Tue, 05 May 2026 10:50:10 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v174/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v174_1777978210</guid>
+Host: That's all for today, folks. Thanks for tuning in to The Legal Beat. If you want to stay up-to-date on the latest music law news and cases, subscribe to our newsletter and join us next time for more insights and analysis. [Outro music continues to play until the end]]]></description>
+        <pubDate>Tue, 05 May 2026 16:28:20 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v176/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v176_1777998500</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
