@@ -21,25 +21,31 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Matt Damon and Noah Kahan on ‘SNL’: How to Watch the Sketch Comedy TV Series Live Online</title>
+        <title>8 Highlights From 2026 Grammy Hall of Fame Gala: Janet Jackson, Heart, Lucinda Williams & More</title>
         <description><![CDATA[[Intro music plays]
 
-Host: "Welcome to this week's update on Billboard. We've got some exciting news for fans of Saturday Night Live. This Saturday, May 9th, the show is new with a great lineup. Matt Damon is hosting for the third time, and folk singer-songwriter Noah Kahan is the musical guest. This will be Kahan's second performance on the show."
+Host: Welcome to tonight's special podcast, where we're celebrating a music legend. Janet Jackson's iconic album "Rhythm Nation" has been recognized with a prestigious award, and we're honored to share her acceptance speech with you.
 
-[Short music transition]
+[Soft music transitions]
 
-Host: "If you want to catch the show live, it broadcasts on NBC at 11:30 p.m. ET, 8:30 p.m. PT, and also livestreams on Peacock Premium. But don't worry if you don't have cable - there are ways to watch SNL online for free. You can grab a free trial with DirecTV to stream an NBC live feed, or check out other streaming options like Sling Blue or Hulu + Live TV."
+Host: Janet Jackson chose not to perform tonight, but she did take the stage to accept the award, alongside her co-producer Jimmy Jam. Here's what she had to say:
 
-[Short music transition]
+[Audio clip of Janet Jackson's speech]
+"I'm so grateful and honored that Rhythm Nation is being recognized tonight... Rhythm Nation still resonates on a deep and profound level. It's an ongoing force that fights bigotry and promotes understanding... It's a movement of people of all ages and backgrounds, seeking to give and receive love free of judgment."
 
-Host: "Another option is to subscribe to Peacock Premium, which costs $10.99 per month and gives you access to watch SNL live and on-demand. Matt Damon is promoting his new film, The Odyssey, which comes out in July, and Noah Kahan recently dropped his latest album, The Great Divide. He's also going on tour in North America, starting in June."
+Host: Powerful words from Janet Jackson, reminding us of the impact of her music. Jimmy Jam, who co-produced the album, also shared his thoughts:
+
+[Audio clip of Jimmy Jam's speech]
+"When my partner, Terry Lewis, and I started working on Rhythm Nation with Janet, we weren't trying to make a political statement. We were simply responding to a world around us... This album, it was a big commercial success, but even better than that, it changed lives, and so did Janet."
+
+Host: Jimmy Jam's words highlight the lasting influence of "Rhythm Nation" and Janet Jackson's legacy. It's clear that this album has made a profound impact on music and society.
 
 [Outro music plays]
 
-Host: "That's all for now. Thanks for tuning in, and we'll catch you next time on Billboard."]]></description>
-        <pubDate>Sun, 10 May 2026 08:13:12 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v208/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v208_1778400792</guid>
+Host: That's all for tonight's podcast. Thank you for joining us as we celebrate Janet Jackson's iconic album "Rhythm Nation". Until next time, goodbye!]]></description>
+        <pubDate>Sun, 10 May 2026 10:19:22 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v209/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v209_1778408362</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
