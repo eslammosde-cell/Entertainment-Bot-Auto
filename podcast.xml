@@ -21,25 +21,31 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Drake Sets 2026 Spotify Record for Most-Streamed Artist, Album & Song in a Single Day</title>
+        <title>ACM Awards 2026 Predictions: Who Will Take Home Top Honors?</title>
         <description><![CDATA[[Intro music plays]
 
-Host: "Welcome back to 'Trending on Billboard'! Today, we're talking about the one and only Drake, who's back to breaking records. On May 15th, Spotify announced that Drake has set not one, not two, but three single-day records in 2026."
+Host: "Welcome to our ACM Awards preview. This Sunday, May 17, the biggest names in country music will gather at the MGM Grand Garden Arena in Las Vegas to find out who will take home the top prizes. And this year, it's all about the ladies, with women leading the nominations."
 
 [Short music transition]
 
-Host: "Drake is now the most-streamed artist, with the most-streamed album, 'Iceman', and the most-streamed song, 'Make Them Cry', all in a single day. And what's impressive is that 'Iceman' is just one of three albums he dropped on Friday, along with 'Maid of Honour' and 'Habibti'."
+Host: "Megan Moroney is at the top with nine nods, followed closely by Miranda Lambert with eight, and Ella Langley and Lainey Wilson with seven each. Wilson and Moroney are also up for the coveted Entertainer of the Year award, alongside Luke Combs, Cody Johnson, Chris Stapleton, Jelly Roll, and Morgan Wallen."
 
 [Short music transition]
 
-Host: "This marks Drake's first solo project since 2023's 'For All the Dogs'. And interestingly, on the song 'Make Them Cry', he name-drops the popular South Korean boy band BTS. In fact, BTS' member V even posted an Instagram story of himself and J-Hope dancing to the song, looking pretty surprised when Drake mentions them in the lyrics."
+Host: "If Luke Combs wins, he'll achieve the ACM's triple crown, having already won New Male Artist and Male Artist of the Year. And if Lainey Wilson takes the prize, she'll join Carrie Underwood as the only woman to win it three times, and would be the first to win it three years in a row."
 
-[Outro music plays]
+[Short music transition]
 
-Host: "That's it for today's update. Drake's back and breaking records, and we can't wait to see what's next. Thanks for tuning in to 'Trending on Billboard'!" [Outro music continues to play]]]></description>
-        <pubDate>Sat, 16 May 2026 03:35:47 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v247/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v247_1778902547</guid>
+Host: "We already know a few of the winners, with Tucker Wetmore taking New Male Artist of the Year, Avery Anna winning New Female Artist of the Year, Stephen Wilson Jr.'s 'Cuckoo' music video winning Visual Media of the Year, and Jessie Jo Dillon earning Songwriter of the Year."
+
+[Short music transition]
+
+Host: "Shania Twain will host the show, which will stream live on Prime Video for the fifth year in a row. Tune in this Sunday to find out who will take home the top prizes. We'll be watching, and we can't wait to see who emerges victorious."
+
+[Outro music plays]]]></description>
+        <pubDate>Sat, 16 May 2026 08:10:13 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v248/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v248_1778919013</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
