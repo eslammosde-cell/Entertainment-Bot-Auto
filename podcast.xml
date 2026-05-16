@@ -21,25 +21,29 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>In Canada: Spotify Raises Premium Prices, Marking First Major Canadian Hike in Nearly 2 Years</title>
+        <title>‘Saturday Night Live UK’: Where to Watch the Season 1 Finale Online</title>
         <description><![CDATA[[Intro music plays]
 
-Host: "Hey there, music lovers. Welcome to our podcast. Today, we're talking about the latest news from Spotify Canada. If you're a premium user, you might want to sit up and take notice, as prices are going up. Starting in July, most premium services will see an increase of $1 to $3 per month."
+Host: "Welcome to our podcast, where we bring you the latest updates on entertainment and streaming. Today, we're talking about a big milestone for Saturday Night Live - it's officially expanding outside of the United States to the United Kingdom with Saturday Night Live UK. The season 1 finale is just around the corner, and we've got the scoop on how to watch it."
 
 [Short music transition]
 
-Host: "According to an email sent to users, the price hike will vary depending on your account type. The good news is that student accounts will remain the same price, at $6.39 plus tax. Spotify says the increase will allow them to invest more in their premium services and deliver the best possible experience for users."
+Host: "The finale will be hosted by Doctor Who actor Ncuti Gatwa, with British singer/songwriter Holly Humberstone as the musical guest. If you're in the UK, you can catch it live on Sky UK on Saturday, May 16 at 10 p.m. BST. But if you're in the US, don't worry - it'll be available on Peacock the following day, Sunday, May 17 at 9 p.m. ET/6 p.m. PT."
 
 [Short music transition]
 
-Host: "This is the first major price hike for Spotify Canada in nearly two years. The last increase was in 2024, which was partially inspired by the 'streaming tax' implemented by the Canadian Radio-television and Telecommunications Commission. We'll be keeping an eye on how this latest price hike affects users and the music industry as a whole."
+Host: "Now, if you want to watch SNL UK online without breaking the bank, we've got a clever workaround for you. You can sign up for a 30-day trial of Walmart+ for just $1, which includes access to Peacock as one of its perks. Alternatively, you can subscribe to Peacock directly for $10.99 per month. Or, if you want to watch it live, you can use ExpressVPN, which starts at just $2.79 per month with an annual plan."
+
+[Short music transition]
+
+Host: "By the way, Ncuti Gatwa is also starring in a play called Born With Teeth at London's Wyndham's Theatre, and Holly Humberstone just released her debut album Cruel World. SNL UK features a talented cast of British comedy actors and comedians, including Hammed Animashaun, Ayoade Bamgboye, and many more."
 
 [Outro music plays]
 
-Host: "That's all for today. Thanks for tuning in. If you want to learn more about the price increase and its impact on the music industry, check out the link in our show notes."]]></description>
-        <pubDate>Sat, 16 May 2026 13:42:29 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v250/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v250_1778938949</guid>
+Host: "That's all for today. Thanks for tuning in, and we'll catch you on the next episode. Don't forget to check out the promo reel for this weekend's episode of SNL UK, and we'll see you soon!"]]></description>
+        <pubDate>Sat, 16 May 2026 16:01:42 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v251/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v251_1778947302</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
