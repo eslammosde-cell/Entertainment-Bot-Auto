@@ -21,29 +21,31 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Baker Boy Headlines NBA House Australia in Melbourne</title>
-        <description><![CDATA[[Intro music fades out]
+        <title>Denzel Curry, Galantis, Peking Duk and More Perform at BASSINTHEGRASS 2026 in Darwin</title>
+        <description><![CDATA[[Intro music plays]
 
-Host: "Welcome to our podcast, where we dive into the latest trends in music and sports. Today, we're talking about the exciting intersection of Australian music and American basketball culture. Baker Boy, the Northern Territory rapper and dancer, recently headlined the second night of NBA House Australia in Melbourne. Let's take a closer look."
-
-[Short music transition]
-
-Host: "Baker Boy, whose real name is Danzal Baker, took the stage at 8:30 p.m. at The Timber Yard, a 6,000-square-metre space that's hosting the NBA's inaugural Australian fan experience. The event features playoff viewing parties, basketball challenges, and even appearances from NBA players like Jock Landale and DeMarcus Cousins."
+Host: "Welcome to our podcast, where we dive into the latest music news and events. I'm your host, and today we're talking about the BASSINTHEGRASS 2026 music festival in Darwin, Australia. Let's get started!"
 
 [Short music transition]
 
-Host: "But Baker Boy is not just any performer. He's a six-time ARIA Award-winner who's been making waves with his latest album tour and new anthem 'CURSE'. We caught up with him to talk about the track, which has been getting crowds going wild. Baker Boy said, 'Everyone has been going mad for it. You know you got something good when people haven't ever heard the track before, but you can see the whole crowd bouncing to it.'"
+Host: "On Saturday, May 16th, the Mindil Beach in Darwin came alive with over 12,000 attendees at the BASSINTHEGRASS 2026 festival. The event featured more than 20 international and Australian artists, including Denzel Curry, Galantis, and Peking Duk. One in five attendees were visitors to the Territory, making it a huge success for tourism."
+
+[Short clip of Denzel Curry's music plays]
+
+Host: "The festival's unique atmosphere and setting didn't go unnoticed. Galantis DJ Christian Karlsson said it was 'an absolutely mind-blowing experience' and encouraged everyone to come to Darwin. Even Playlunch lead singer Liam Bell raved about the festival, saying the people, vibes, and food were amazing."
 
 [Short music transition]
 
-Host: "The NBA House Australia event is headlined by All-Stars Jaren Jackson Jr. and DeMarcus Cousins, who are appearing for meet-and-greets and fan sessions. Jackson Jr. said, 'I know Australian fans are some of the most passionate in the world, and I look forward to celebrating the excitement of the NBA Playoffs with them.' It's an exciting time for Baker Boy, who's set to release a deluxe version of his album later this year."
+Host: "But it's not just the music that makes BASSINTHEGRASS special. According to Tourism and Events NT CEO Suzana Bishop, it's the combination of world-class live music, Darwin's natural beauty, and incredible food that makes it unlike any other festival. And the numbers back it up - Darwin hotel occupancy reached 70% over the event weekend, a 10-point increase from last year."
 
-[Outro music starts]
+[Outro music plays]
 
-Host: "That's all for today's episode. Thanks for tuning in to our podcast. We'll be back with more updates on the latest trends in music and sports."]]></description>
-        <pubDate>Sun, 17 May 2026 10:25:25 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v256/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v256_1779013525</guid>
+Host: "That's all for today's episode. Thanks for tuning in, and we'll catch you at the next music festival. Don't forget to subscribe to our podcast for more music news and updates."
+
+[Outro music continues to play until the end]]]></description>
+        <pubDate>Sun, 17 May 2026 13:41:27 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v257/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v257_1779025287</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
