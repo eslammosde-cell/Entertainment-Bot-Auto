@@ -21,29 +21,35 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Sarah Aarons, Amy and George Sheppard Among Australian Songwriters Saluted With Billion Awards</title>
+        <title>Rock on the Rise, Pop Drops: Five-Year Trends on Billboard’s Radio Songs Chart</title>
         <description><![CDATA[[Intro music plays]
 
-Host: Welcome to our podcast, where we dive into the latest music news and trends. Today, we're celebrating the winners of the Billions Awards, presented by APRA AMCOS to songwriters and publishers who have reached a billion streams on their songs. Let's take a look at some of the winners.
+Host: Welcome to our podcast, where we dive into the latest trends in music. Today, we're looking at the Billboard Radio Songs chart over the past five years. What's been making waves on the airwaves? Let's find out.
 
-[Soft music plays in the background]
+[Music transitions]
 
-Host: First up, we have hitmaker Sarah Aarons, who has taken home not one, but two Billions Awards. She co-wrote the breakup song "I Miss U, I'm Sorry" with Gracie Abrams, and another love song "Love Me Not" with a team of talented writers, including Anderson Paak and Spencer Stewart. Aarons is no stranger to awards, having won six APRA Awards, including Songwriter of the Year in 2019.
+Host: According to ChartCipher's latest research, rock music is on the rise, growing from 10% to 24% of the chart between 2021 and 2025. That's more than doubling its footprint. Examples of rock hits that made it big include sombr's "Back to Friends", Hozier's "Too Sweet", and Glass Animals' "Heat Waves".
 
-[Music transitions to a new segment]
+[Short music clip plays]
 
-Host: We also have sibling duo Amy and George Sheppard, who collected their first Billions Award for their song "Geronimo", recorded by the Brisbane-based pop group Sheppard. The song was a huge hit, peaking at number 53 on the Billboard Hot 100 in 2014. George Sheppard says, "It's been an amazing journey for us, and to have the amazing team that we've had, getting to bring joy to people for the last 14 years, it's a dream come true."
+Host: On the other hand, pop music has been on the decline, falling from 52% to 35% over the same period. Country music has remained steady, with a slight dip from 31% to 29%. The top five genres on the Radio Songs chart in 2025 are pop, country, rock, hip-hop/rap, and dance/club/electronic.
 
-[Music transitions to another segment]
+[Music transitions]
 
-Host: Other winners include Sneaky Sound System's Connie Mitchell for her work on Kanye West's "Can't Tell Me Nothing", Kota Banks and Taka Perry for their song "TOUCH", and Stuart Crichton for his work on Kygo's "Stargazing". These songwriters and producers have achieved an incredible milestone, and we're excited to celebrate their success.
+Host: Now, let's talk about the instruments that are dominating the airwaves. It turns out that drums and bass are almost universal, with nearly 93% to 96% of hits featuring these instruments. Guitar use has also increased, from 60% to 68%, as rock music gains popularity. However, piano use has taken a hit, dropping from 35% to just 11% over the five-year period.
+
+[Short music clip plays]
+
+Host: Finally, what about the lyrics? It seems that cynical and detached are the most prevalent moods, with increases of 29 and 19 percentage points, respectively. Anger is also on the rise, with a 16 percentage point increase. But don't worry, there's some positive news too - happy and optimistic lyrics have also been on the rise, with 38% and 37% of hits featuring these moods in 2025.
 
 [Outro music plays]
 
-Host: That's all for today's podcast. Congratulations to all the winners of the Billions Awards, and thank you for tuning in. We'll be back with more music news and trends soon. [Outro music continues to play until the end]]]></description>
-        <pubDate>Wed, 20 May 2026 09:42:40 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v272/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v272_1779270160</guid>
+Host: That's a wrap on our look at the Billboard Radio Songs chart over the past five years. Thanks for tuning in, and we'll catch you on the next episode.
+
+[Outro music continues to play]]]></description>
+        <pubDate>Wed, 20 May 2026 15:33:51 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v273/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v273_1779291231</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
