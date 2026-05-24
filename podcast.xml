@@ -21,29 +21,31 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Former Caifanes Guitarist Alejandro Marcovich in a Coma Following a Stroke, His Family Reports</title>
+        <title>Lenny Tavárez Launches Dale Ritmo Outreach With East Harlem Students & More Uplifting Moments in Latin Music</title>
         <description><![CDATA[[Intro music plays]
 
-Host: Welcome to our music news update. We have some concerning news about Alejandro Marcovich, the former guitarist of the Mexican band Caifanes. 
+Host: "Welcome to our Latin music update. This week, we're celebrating some amazing moments in the world of Latin music. From birthday celebrations to World Cup announcements, let's dive in."
 
-[Soft music continues in the background]
+[Sound effects: Upbeat Latin music]
 
-Host: According to a statement from his family, Marcovich suffered a stroke on Tuesday night, May 19th, and is currently in a coma in the intensive care unit. His family says he's in good hands with specialist doctors and has expressed gratitude for the love and well wishes from his fans.
+Host: "First up, happy birthday to Lenny Tavárez! The Puerto Rican star spent his special day launching his new community outreach initiative, Dale Ritmo, in East Harlem. He teamed up with his wife, Natasha Nazario, and Platoon to bring salsa dancing to students at the James Weldon Johnson School. Tavárez said, 'Seeing these students dance, learn and connect with their roots is the best birthday gift I could have received.'"
 
-[Pause for a brief moment]
+[Sound effects: Brief salsa music clip]
 
-Host: Marcovich, who's 65, was a founding member of Caifanes from 1989 to 1995 and has been a key figure in the Mexican rock scene. Caifanes was recently ranked number 7 on Billboard's 50 Best Latin Rock Bands of All Time, with classics like "La Negra Tomasa" and "Mátenme Porque Me Muero".
+Host: "Meanwhile, Shakira is making headlines with an exciting announcement. She's invited the Ghetto Kids from Uganda to perform with her at the 2026 FIFA World Cup final halftime show in New Jersey. The child dance group went viral with their routine to Shakira's song 'Dai Dai,' and now they're getting the chance to shine on the world stage."
 
-[Soft music continues]
+[Sound effects: Brief clip of "Dai Dai"]
 
-Host: Unfortunately, due to his current condition, Marcovich will not be able to attend any previously scheduled concert dates until further notice. We'll be keeping an eye on his recovery and sending our best wishes to him and his family.
+Host: "And, soccer fans in Puerto Rico, rejoice! Rauw Alejandro is launching La Tribuna del Fútbol, a free fan experience that will run from June 11 to July 19. The event will feature live music, food, cultural activations, and daily screenings of World Cup matches. Plus, there will be tournaments and activities like padel, beach tennis, and bachata sessions."
 
-[Outro music plays]
+[Sound effects: Upbeat music continues]
 
-Host: That's all for now. Thanks for tuning in, and we'll catch you on the next update.]]></description>
-        <pubDate>Sat, 23 May 2026 21:58:52 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v293/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v293_1779573532</guid>
+Host: "That's all for this week's Latin music update. Thanks for tuning in, and we'll catch you next time with more exciting news and updates from the world of Latin music."
+
+[Outro music plays]]]></description>
+        <pubDate>Sun, 24 May 2026 04:04:01 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v294/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v294_1779595441</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
