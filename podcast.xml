@@ -21,27 +21,31 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Billboard’s Music Industry Events Calendar</title>
+        <title>Sabrina Carpenter Gets Restraining Order Against Alleged Stalker: ‘Disturbing Violations’</title>
         <description><![CDATA[[Intro music plays]
 
-Host: "Welcome to the latest update from the music industry. If you're looking for a one-stop shop for all the major music events, look no further than Billboard Pro's new music industry events calendar.
+Host: "Welcome to our show, where we bring you the latest updates on trending news. Today, we're talking about pop star Sabrina Carpenter, who's been granted a restraining order against an alleged stalker.
 
 [Soft music continues in the background]
 
-Host: "This comprehensive calendar features conferences, festivals, networking mixers, and more, happening nationally and internationally. From the Grammy Awards in Los Angeles on February 7, 2027, to the Electric Daisy Carnival in Las Vegas from May 13-24, 2027, you'll find it all on Billboard Pro.
+Host: "According to reports, 31-year-old William Applegate has been surveilling Carpenter's Los Angeles home for a month, and even attempted to break in on May 23rd. The incident was captured on Ring camera footage, which showed Applegate trying to push his way into her home.
 
 [Pause for emphasis]
 
-Host: "And it's not just limited to 2027. The calendar stretches all the way to March 2028, giving you a glimpse into the future of music industry events. Want your event listed? Simply reach out to joe.maimone@billboard.com for more information.
+Host: "Carpenter filed a petition for a restraining order, claiming that Applegate's behavior has caused her significant fear for her personal safety and the safety of those living in her home. The court has granted a temporary order, requiring Applegate to stay at least 100 yards away from Carpenter and her home until a full hearing on June 17th.
 
-[Outro music starts playing]
+[Soft music continues]
 
-Host: "That's all for now. Stay tuned to Billboard Pro for the latest music industry news, charts, analysis, and events. Thanks for listening!"
+Host: "The LAPD detective involved in the case has stated that Applegate's conduct suggests a 'disturbing and irrational fixation' on Carpenter. The Los Angeles City Attorney's Office is also reviewing the case for possible criminal charges.
 
-[Outro music continues to play until the end]]]></description>
-        <pubDate>Mon, 01 Jun 2026 17:51:32 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v342/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v342_1780336292</guid>
+[Wrap-up music starts playing]
+
+Host: "That's the latest on Sabrina Carpenter's case. We'll keep you updated on any further developments. Thanks for tuning in, and we'll catch you on the next episode."
+
+[Outro music plays]]]></description>
+        <pubDate>Mon, 01 Jun 2026 21:38:08 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v343/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v343_1780349888</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
