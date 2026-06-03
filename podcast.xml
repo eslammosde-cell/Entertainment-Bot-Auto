@@ -21,29 +21,30 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Universal Music Publishing Group Appoints Sunita Kaur as President, Asia</title>
-        <description><![CDATA[[Upbeat music fades out, and the host begins speaking]
+        <title>SXSW London 2026: AEG’s Alex Hill Says U.K. Live Industry Wants to Move ‘Quicker’ Than Government on Ticket Resale Legislation</title>
+        <description><![CDATA[[Intro music plays]
 
-Host: "Welcome to the latest music industry update. We've got some exciting news from Universal Music Publishing Group. They've just announced a major restructuring, and as part of that, Sunita Kaur is joining the team as President of Asia. Based in Singapore, Kaur will be leading the charge across the continent, driving growth, strengthening key markets, and shaping a more connected music ecosystem.
+Host: "Welcome to our podcast, where we dive into the latest trends and discussions in the music industry. Today, we're talking about the challenges of ticket sales and the live music scene. Joining us are insights from Alex Hill, President and CEO of AEG International, who recently spoke at SXSW London. Let's dive in."
 
-[Soft music plays in the background]
+[Soft music transition]
 
-Host: "Kaur is no stranger to the music and tech world. She's a Billboard International Power Player alum, with experience at Twitch, Spotify, and even Facebook. She'll be working closely with UMPG teams to support and amplify the voices of songwriters and artists, making sure they have the platforms and protections they need to thrive.
+Host: "Hill discussed the issue of secondary ticket markets selling tickets above face value, a problem that's been plaguing fans for decades. The UK government had promised to ban this practice, but legislation has been delayed, leaving artists and industry leaders frustrated."
 
-[Music transitions to a slightly more upbeat tone]
+[Short audio clip from Alex Hill's speech]
+Alex Hill: "I think as an industry we'd like to work quicker than the regulator at the moment. But it will always be an issue... There's a number of bad actors, such as bots and touts that will look to make that process even tougher."
 
-Host: "UMPG Chairman and CEO Jody Gerson is thrilled to have Kaur on board, citing her deep understanding of the digital landscape and her valuable relationships across the region. Kaur herself is excited to join the team, saying it feels like a natural next chapter in her career as music and technology continue to come together.
+Host: "Hill also touched on the growth of the live music scene, which has seen a post-pandemic boom. While growth has slowed down recently, he credits the streaming and digital market for introducing fans to new genres and artists. This summer, fans can look forward to shows by Bad Bunny and BTS at the Tottenham Hotspur Stadium in London."
 
-[Music fades out slightly, and the host speaks in a more neutral tone]
+[Soft music transition]
 
-Host: "This announcement comes just hours after UMPG revealed the departure of long-standing regional chief Andrew Jenkins, who will be leaving his role as President of Australia and the Asia Pacific Region on July 1. It's an exciting and defining moment for the global music ecosystem, and we can't wait to see what's next for Universal Music Publishing Group and Sunita Kaur.
+Host: "Despite the demand for live music, Hill notes that costs are a major concern for promoters and venues. With rising taxes and labor costs, the industry needs to be careful not to let costs impact demand. As Hill put it, 'demand is not a problem in our industry,' but managing costs is crucial to keeping the live music scene thriving."
 
-[Music fades back in, and the host wraps up the episode]
+[Outro music plays]
 
-Host: "That's all for today. Thanks for tuning in to this update from the music industry. We'll be back with more news and insights soon."]]></description>
-        <pubDate>Wed, 03 Jun 2026 11:09:03 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v350/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v350_1780484943</guid>
+Host: "That's all for today's podcast. Thanks for tuning in to our discussion on the live music industry and the challenges of ticket sales. We'll be back with more insights and trends in the music world."]]></description>
+        <pubDate>Wed, 03 Jun 2026 16:58:57 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v351/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v351_1780505937</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
