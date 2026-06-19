@@ -21,31 +21,37 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>FKA twigs & Lil Yachty, Myles Smith, Kashus Culpepper & More: New Music Friday Guide</title>
-        <description><![CDATA[[Intro music plays]
+        <title>Warner Music Group’s Africori Taps Adam Tiran as GM</title>
+        <description><![CDATA[[Energetic music plays in the background]
 
-Host: "Welcome to this week's music update. We're diving into the hottest new releases that are trending on Billboard. Let's get started!"
-
-[Short music transition]
-
-Host: "First up, British singer-songwriter Myles Smith has just dropped his debut studio album, 'My Mess, My Heart, My Life'. This highly anticipated release comes two years after his breakout hit 'Stargazing' and three EPs later. We can't wait to hear what he has in store for us."
+Host: Welcome to Trending on Billboard, your source for the latest news in music. I'm your host, [Name], and today we have some exciting news from Africa.
 
 [Short music transition]
 
-Host: "Next, FKA twigs has teamed up with Lil Yachty for a summer smash called 'On Your Mind'. This punchy, crunchy collab marks twigs' first release since winning the 2026 Grammy for Best Dance/Electronic Album. The song is a thrilling three and a half minutes of hyperpop goodness. FKA twigs shared the backstory of this song, revealing it was written during a tough time when she found out she wouldn't be able to perform at Coachella due to visa issues."
+Host: Adam Tiran has been appointed as the new general manager of Africori, a leading digital music distribution company in Africa. Based in Johannesburg, Tiran will report to Simon Robson, president of EMEA Recorded Music at Warner Music Group.
 
-[Short music clip: "On Your Mind" by FKA twigs & Lil Yachty]
+[Short pause]
 
-Host: "We also have a new release from Coco & Breezy, who have linked up with Gavin Turek for the slinky summer house track 'Tonight'. This groovy heater is perfect for the summer season, with a relaxed and feminine vibe. Coco & Breezy are on tour all summer, so be sure to catch them live if you can."
+Host: As a 13-year veteran of Africori, Tiran has played a key role in the company's expansion across East, West, and Southern Africa. He's also championed acts like Master KG, Focalistic, and Makhadzi, helping to elevate their careers globally.
+
+[Short music clip]
+
+Host: In a statement, Tiran expressed his excitement about his new role, saying he's committed to empowering independent African artists and investing in local cultures. Simon Robson also praised Tiran's understanding of the African music landscape and his track record in artist development.
+
+[Short pause]
+
+Host: This appointment comes after Yoel Kenan stepped down as CEO of Africori, a company he founded 14 years ago. Under Kenan's leadership, Africori became a key player in Warner Music's global network and launched several successful initiatives, including a joint venture with WM France.
 
 [Short music transition]
 
-Host: "These are just a few of the exciting new releases out this week. For more, check out Billboard's Friday Music Guide for the full list of essential releases. Thanks for tuning in, and we'll catch you in the next episode!"
+Host: Warner Music Group first invested in Africori in 2020 and later acquired a majority stake in 2022. With Tiran at the helm, Africori is set to accelerate its investment in local talent and deepen its footprint across Africa.
 
-[Outro music plays]]]></description>
-        <pubDate>Fri, 19 Jun 2026 10:45:26 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v433/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v433_1781865926</guid>
+[Closing music plays]
+
+Host: That's all for today's episode of Trending on Billboard. Thanks for tuning in, and we'll catch you on the next one!]]></description>
+        <pubDate>Fri, 19 Jun 2026 15:30:14 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v434/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v434_1781883014</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
