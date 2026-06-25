@@ -21,25 +21,31 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Billboard’s Music Industry Events Calendar</title>
+        <title>Scissor Sisters Unearth ‘Sweet Footage’ From Kylie Minogue Recording Sessions In 2004</title>
         <description><![CDATA[[Intro music plays]
 
-Host: "Hey there, music lovers! Welcome to our podcast. If you're part of the music industry, or just a fan looking to stay in the know, we've got some exciting news to share with you. Billboard Pro has just launched a brand new music industry events calendar, and it's a game-changer."
+Host: "Welcome to our podcast, where we dive into the latest music news and trends. Today, we're talking about a blast from the past. The Scissor Sisters, a queer pop icon group, have been feeling nostalgic about their collaboration with the one and only Kylie Minogue."
 
-[Soft background music continues]
+[Soft music transitions in]
 
-Host: "This comprehensive calendar will feature all the major national and international industry events, from conferences to festivals, and even networking mixers. Whether you're looking to stay up-to-date on the latest trends or connect with other professionals in the field, this calendar has got you covered."
+Host: "After watching the Kylie Minogue documentary on Netflix, the Scissor Sisters dug up some 'sweet footage' from a recording session over 20 years ago. The result? A delicious electro-pop nugget called 'I Believe in You', which has been remixed by the likes of Skylark and Mylo."
 
-[Short pause]
+[Clip of "I Believe in You" plays in the background]
 
-Host: "Some highlights to look out for include the Grammy Awards on February 7th, 2027, in Los Angeles, and the Electric Daisy Carnival, or EDC, in Las Vegas from May 13th to 24th, 2027. And if you're an event organizer, you can even get your event listed on the calendar by reaching out to joe.maimone@billboard.com."
+Host: "The footage shows Kylie, wearing a leopard print dress, working with Scissor Sisters' Jake Shears and Babydaddy in the studio. It's a rare, behind-the-scenes look at a collaboration coming together, with handwritten lyrics and Babydaddy's production wizardry."
+
+[Clip ends, music transitions back]
+
+Host: "The Scissor Sisters have had an amazing run in the UK, with 10 Top 40 singles and two number one albums. And Kylie, of course, is a chart superstar with eight number one singles and 11 number one albums. It's no wonder they're both adored in the UK, and we're excited to see what they have in store for us next."
 
 [Outro music plays]
 
-Host: "That's it for today's update. Thanks for tuning in, and we'll catch you on the flip side. Remember to check out Billboard Pro for all the latest music industry news, charts, and analysis, and don't forget to mark your calendars for these exciting events!"]]></description>
-        <pubDate>Thu, 25 Jun 2026 09:30:54 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v465/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v465_1782379854</guid>
+Host: "Thanks for tuning in to this episode of our podcast. If you want to hear more about the latest music trends and collaborations, be sure to subscribe to our show. Until next time, stay musical!"
+
+[Outro music continues to play until the end]]]></description>
+        <pubDate>Thu, 25 Jun 2026 14:41:07 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v466/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v466_1782398467</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
