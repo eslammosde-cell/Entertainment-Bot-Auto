@@ -21,27 +21,31 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Ariana Grande Reschedules Three Eternal Sunshine Tour Dates</title>
-        <description><![CDATA[[Intro music plays]
+        <title>Eric Hutchinson Sets First Australian Headline Tour in 16 Years</title>
+        <description><![CDATA[[Intro music fades out]
 
-Host: "Hey, music lovers! Welcome to the latest update on Billboard's trending news. Ariana Grande has just announced some changes to her Eternal Sunshine Tour due to production issues that raised safety concerns. Let's dive into the details."
+Host: "Welcome to Trending on Billboard! Today, we're excited to share some news with our Australian listeners. American singer-songwriter Eric Hutchinson is returning to Australia for the first time in 16 years, and this time, he's headlining his own tour.
 
-[Short musical transition]
+[Soft music plays in the background]
 
-Host: "Ariana Grande has rescheduled three dates on her tour. The July 12 show at Barclays Center in Brooklyn will now take place on July 14, and her July 22 and July 24 concerts at TD Garden in Boston have been moved to July 23 and July 26, respectively. Grande apologized to fans on Instagram, explaining that safety is the top priority and these changes ensure the show can be presented as planned."
+Host: "Hutchinson has a special connection to Australia. His single 'Rock & Roll' featured on the popular TV drama Packed to the Rafters, which helped drive the track to platinum certification and a number one spot in 2009. He's also toured the country before, supporting Jason Mraz and Kelly Clarkson, but this is his first-ever headline run.
 
-[Short musical transition]
+[Music transitions to a short clip of "Rock & Roll"]
 
-Host: "The good news is that all tickets will be honored for the rescheduled dates, and ticket holders will receive more information directly. The Eternal Sunshine Tour, which supports Grande's seventh studio album, has been a massive success so far, with a setlist that spans her entire catalog, including hits from Positions, Dangerous Woman, and thank u, next."
+Host: "The tour kicks off in November, with stops in Brisbane, Melbourne, and Sydney. Hutchinson will be performing his new material, as well as some of his classic hits, including 'OK, It's Alright With Me' and 'A Little More.' And, Australian Idol winner Marshall Hamburger will be joining him as the opening act.
 
-[Short musical transition]
+[Music transitions back to the soft background tune]
 
-Host: "And if you're excited about new music from Ariana Grande, you won't have to wait long! Her eighth studio album, Petal, is set to drop on July 31, led by the hit single 'Hate That I Made You Love Me,' which recently became her 10th career No. 1 on the Billboard Hot 100. That's all for now. Stay tuned for more music updates, and thanks for listening!"
+Host: "The tour is in support of Hutchinson's latest album, Repeating Myself, which marks a return to his piano-driven pop and soul sound. Don't miss out on this incredible opportunity to see Eric Hutchinson live in Australia. Get your tickets now for the shows at Lefty's Music Hall in Brisbane, Northcote Social Club in Melbourne, and The Lansdowne in Sydney.
 
-[Outro music plays]]]></description>
-        <pubDate>Tue, 30 Jun 2026 09:47:39 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v495/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v495_1782812859</guid>
+[Outro music starts playing]
+
+Host: "That's all for today. Thanks for tuning in to Trending on Billboard. We'll catch you in the next episode!" 
+
+[Outro music continues to play until the end]]]></description>
+        <pubDate>Tue, 30 Jun 2026 14:28:50 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v496/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v496_1782829730</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
