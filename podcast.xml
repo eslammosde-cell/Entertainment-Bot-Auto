@@ -21,21 +21,29 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Billboard’s Music Industry Events Calendar</title>
+        <title>Insomniac to Stay Involved With Miami’s Club Space & Factory Town Venues After Legal Settlement</title>
         <description><![CDATA[[Intro music plays]
 
-Host: "Welcome to the latest update from the music industry. If you're looking for a one-stop-shop to stay on top of all the major music events, you're in luck. Billboard Pro has just launched a comprehensive music industry events calendar, featuring conferences, festivals, networking mixers, and more, from around the world.
+Host: "Welcome to our show, where we dive into the latest news and updates from the world of music and entertainment. Today, we're talking about a major development in the dance music scene. Insomniac Events, a global dance music company, has reached a settlement with a group of Miami club operators, ending a two-year legal battle. Let's break it down."
 
-From now until early 2028, you can find key events listed, including the Grammy Awards, taking place on February 7th, 2027, in Los Angeles. Whether you're an industry pro or just looking to stay in the know, this calendar is the perfect resource for you.
+[Short music transition]
 
-And, if you have an event you'd like to see listed, it's easy to get in touch. Just email joe.maimone@billboard.com for more information.
+Host: "Insomniac, partially owned by Live Nation, had been working with David Sinopoli, Davide Danese, and Jose Gabriel Coloma Cano to run two Miami venues: Club Space and Factory Town. However, things took a turn in 2024, when Insomniac alleged that the trio made 'outrageous demands' for more money and control of Factory Town. The trio, on the other hand, claimed that Insomniac stripped away their ownership rights, leaving them with all the work and risk, but minimal benefits."
+
+[Short music transition]
+
+Host: "The two sides went into mediation and emerged with an initial settlement, but things quickly fell apart. Insomniac sued the trio for allegedly violating the deal, while the trio countersued, claiming that Insomniac breached the agreement by making unilateral decisions about talent bookings. The countersuit also included some strong allegations against Insomniac's CEO, Pasquale Rotella, which Insomniac characterized as an 'irrelevant smear campaign'."
+
+[Short music transition]
+
+Host: "But now, it seems that the two sides have finally reached a settlement. According to a joint statement, Insomniac will continue to operate Club Space alongside David Sinopoli and maintain its commitment to Factory Town. The trio will continue to operate Jolene, and Davide Danese and Coloma Cano will also work on new projects. It's a positive outcome for both parties, and we're excited to see what's next for these Miami venues."
 
 [Outro music plays]
 
-Host: "That's it for now. Stay tuned for more updates from the music industry, and don't forget to check out Billboard Pro's new events calendar for all the latest happenings."]]></description>
-        <pubDate>Fri, 10 Jul 2026 22:09:35 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v559/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v559_1783721375</guid>
+Host: "Thanks for tuning in to this update from the world of dance music. We'll keep you posted on any further developments. Until next time, stay tuned!"]]></description>
+        <pubDate>Sat, 11 Jul 2026 02:57:48 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v560/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v560_1783738668</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
