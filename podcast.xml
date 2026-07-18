@@ -21,29 +21,31 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Australia’s Spilt Milk Festival Confirms 2026 Return</title>
-        <description><![CDATA[[Intro music plays]
+        <title>Grand Ole Opry’s Opry 100 Honors to Celebrate Charley Pride’s Career and Legacy</title>
+        <description><![CDATA[[Intro music fades out]
 
-Host: "Welcome to the latest music news! We've got some exciting updates for you from Down Under. Australia's Spilt Milk festival has officially confirmed its return for 2026!
+Host: "Welcome to our show, where we celebrate the latest news in music. Today, we're shining a spotlight on a country music legend, the one and only Charley Pride. On September 22nd, the Grand Ole Opry's Opry 100 Honors will pay tribute to Pride's life, career, and legacy at the Grand Ole Opry House in Nashville.
 
-[Short music transition]
+[Short music clip: "Kiss an Angel Good Mornin'"]
 
-Host: "The festival dropped a teaser video on social media last Friday, featuring members of the public talking about their favorite Aussie music festivals, before cutting to footage of a packed crowd and epic stage production. And the big reveal? Spilt Milk is coming back in 2026! Although, we're still waiting on dates, locations, and the lineup.
+Host: "You may know Charley Pride for his hits like 'Kiss an Angel Good Mornin'', 'Is Anybody Goin' to San Antone', and 'Roll On Mississippi'. With 29 number one Billboard Hot Country Songs chart hits and three Grammy Awards under his belt, Pride was a trailblazer in country music. He was the first Black superstar in the genre, and his impact is still felt today.
 
-[Short music transition]
+[Short music clip: "All I Have to Offer You (Is Me)"]
 
-Host: "This follows a successful 2025 edition, which sold out across all four host cities: Ballarat, Perth, Canberra, and the Gold Coast. Last year's lineup was a real treat, with Kendrick Lamar headlining, alongside Doechii, Dominic Fike, and many more.
+Host: "The event will feature performances from Opry members Darius Rucker and Pam Tillis, as well as Neal McCoy and Pride's son, Dion Pride. Dion recently shared that the Grand Ole Opry held a special place in his father's heart, and he's grateful to see his music and legacy celebrated on the stage he loved so much.
 
-[Short music transition]
+[Short music clip: "Just Between You and Me"]
 
-Host: "Spilt Milk has come a long way since its launch in Canberra back in 2016. It's grown into one of Australia's largest touring festivals, with past performances from big names like Post Malone, Lorde, and Flume. And, interestingly, the 2019 Ballarat event was even Juice WRLD's final live show.
+Host: "Charley Pride was inducted into the Country Music Hall of Fame in 2000, and he earned numerous accolades throughout his career, including the ACM's Pioneer Award and the Recording Academy's Lifetime Achievement Award. Dan Rogers, the Opry's executive producer, remembers Pride's performances fondly, saying 'every single night Charley Pride came home to the Opry was an event'.
 
-[Outro music plays]
+[Short music clip: "Roll On Mississippi"]
 
-Host: "We can't wait to see what Spilt Milk 2026 has in store. Stay tuned for more updates, and we'll catch you in the next episode!"]]></description>
-        <pubDate>Sat, 18 Jul 2026 13:25:08 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v617/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v617_1784381108</guid>
+Host: "And here's the best part: $5 from each ticket sold for the Opry 100 Honors shows will go directly to the Opry Trust Fund, which supports country music professionals in need. So mark your calendars for September 22nd and join in the celebration of Charley Pride's remarkable life and legacy. We'll be back with more music news after this break."
+
+[Outro music starts playing]]]></description>
+        <pubDate>Sat, 18 Jul 2026 16:00:57 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v618/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v618_1784390457</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
