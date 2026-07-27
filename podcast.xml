@@ -21,29 +21,25 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>System of a Down and Faith No More Announce First Australian and New Zealand Tour in Over a Decade</title>
-        <description><![CDATA[Here's a short and engaging podcast script based on the article:
+        <title>Green Day’s Billie Joe Armstrong Crashes San Diego Comic-Con For Pop-Up Ice Cream Truck Performance of ‘Basket Case’</title>
+        <description><![CDATA[[Intro music plays]
 
-[Upbeat music fades out, and the host speaks]
+Host: "Welcome to our show! Today, we're talking about a exciting new project from a talented singer. Let's dive right in."
 
-Host: "Hey music fans, we've got some exciting news for you! System of a Down is finally returning to Australia and New Zealand after more than a decade. And they're not coming alone - they're bringing Faith No More as special guests!
+[Short music transition]
 
-[Sound effects: A quick clip of System of a Down's "Chop Suey!" or another popular song]
+Host: "The singer recently made an appearance at Gallagher Square, just outside Petco Park. But why were they there? The answer is to promote their group's upcoming film, Nimrods."
 
-Host: "The tour kicks off in January 2027, with shows in Sydney, Melbourne, Brisbane, and Wellington. And if you're eager to get your hands on tickets, don't worry - they go on general sale on July 31st. But if you're a true fan, you can get access to pre-sales as early as July 28th.
+[Short music transition]
 
-[Sound effects: A quick clip of Faith No More's "Epic" or another popular song]
+Host: "Nimrods is being billed as a coming-of-age rock comedy, and we can't wait to learn more about it. We'll be keeping an eye out for more updates on this project, and we'll be sure to share them with you as soon as we get them."
 
-Host: "System of a Down is one of the most iconic heavy acts of their era, with a string of chart-topping albums, including Mezmerize and Hypnotize, which both debuted at number one on the Billboard 200 in 2005. And Faith No More, led by the legendary Mike Patton, has been breaking boundaries with their unique sound since the 80s.
+[Outro music plays]
 
-[Sound effects: A quick clip of a crowd cheering]
-
-Host: "So mark your calendars for January and February 2027, and get ready to rock out with System of a Down and Faith No More. It's going to be a tour you won't want to miss! Check out the tour dates and ticket information, and we'll catch you on the flip side."
-
-[Upbeat music fades back in]]]></description>
-        <pubDate>Mon, 27 Jul 2026 09:59:13 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v679/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v679_1785146353</guid>
+Host: "That's all for today. Thanks for tuning in, and we'll catch you on the next one!"]]></description>
+        <pubDate>Mon, 27 Jul 2026 14:45:25 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v680/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v680_1785163525</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
