@@ -21,29 +21,35 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Modest Mouse Replaces Guitarist Simon O’Connor Amid Allegations</title>
+        <title>Glen Hansard’s Family Announces Public Memorial and Funeral Details in Dublin</title>
         <description><![CDATA[[Intro music plays]
 
-Host: "Welcome to our show, I'm your host. Today, we're talking about some unexpected news from the music world. Modest Mouse has announced that guitarist Simon O'Connor will not be joining their upcoming North American tour. This comes after allegations surfaced that O'Connor sent inappropriate social media messages to a minor.
+Host: "Welcome to our podcast, where we're sharing the latest news and updates. Today, we're remembering the life of Irish singer-songwriter Glen Hansard, who passed away on July 29th at the age of 56. His family has announced details of his public memorial and funeral, and we're here to share those with you."
 
-[Soft music plays in the background]
+[Soft music transitions in]
 
-Host: "The band made the announcement on Instagram, stating that O'Connor will be replaced by Les Savy Fav guitarist Seth Jabour. In their post, Modest Mouse wrote, 'Simon O'Connor will not be joining us on the upcoming tour. The good news is that Seth Jabour of Les Savy Fav will be jumping in to play guitar. We look forward to being out there with you all.'
+Host: "A public wake for Glen Hansard will be held at the Baroque Chapel at IMMA, Royal Hospital Kilmainham in Dublin on Monday, August 3rd, from 11 am to 4 pm. This will be an opportunity for fans to pay their respects to the beloved musician."
 
 [Short pause]
 
-Host: "The allegations against O'Connor surfaced in late July, when a Reddit user claimed that the guitarist sent them an explicit image and commented on their photos. O'Connor responded to the allegations, stating that he 'unequivocally' opposes any sexual behavior towards minors. He claimed that he mistook the Reddit user for someone who had been trolling him online and made a mistake by sending the messages.
+Host: "The following day, Tuesday, August 4th, a funeral service will take place at St. Patrick's Cathedral in Dublin at 1:30 pm. While the service is open to the public, access inside the cathedral will be limited due to the large number of mourners expected. For those who can't attend in person, the funeral will be broadcast live on Irish news outlets RTE News and RIP.IE."
 
-[Soft music continues to play]
+[Soft music continues]
 
-Host: "Modest Mouse is set to embark on their North American tour on August 4th, in support of their latest album, 'An Eraser and a Maze'. The tour will wrap up on October 24th in Sacramento. We'll be keeping an eye on this story and bringing you updates as more information becomes available.
+Host: "Glen's family has also shared that music at the funeral will be provided by his friends and family, making it a truly special celebration of his life. In lieu of flowers and gifts, they're asking well-wishers to consider donating to Dublin's Simon Community or Ukrainian Action."
 
-[Outro music plays]
+[Short pause]
 
-Host: "Thanks for tuning in to our show. We'll be back with more news and updates from the music world. Until next time, goodbye!"]]></description>
-        <pubDate>Sun, 02 Aug 2026 03:23:03 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v721/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v721_1785640983</guid>
+Host: "As we remember Glen Hansard's life and legacy, we're also hearing from fellow artists who've been touched by his music. Bono, Bruce Springsteen, Billie Eilish, and Lin-Manuel Miranda are just a few of the many who've shared their condolences and memories of Glen."
+
+[Closing music starts]
+
+Host: "We'll continue to celebrate Glen Hansard's life and music in the days to come. For now, our thoughts are with his family and loved ones. Thank you for joining us today."
+
+[Outro music plays]]]></description>
+        <pubDate>Sun, 02 Aug 2026 08:29:48 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v722/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v722_1785659388</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
