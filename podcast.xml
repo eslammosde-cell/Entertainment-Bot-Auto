@@ -21,33 +21,23 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>A Full List of Current 2026 K-Pop Concerts (Updating)</title>
-        <description><![CDATA[Here's a short, engaging podcast script based on the provided article:
+        <title>Billboard’s Music Industry Events Calendar</title>
+        <description><![CDATA[[Intro music plays]
 
-[Upbeat music plays]
-
-Host: "Welcome to our K-pop concert update! If you're a fan of K-pop, you're in luck because 2026 is shaping up to be an amazing year for concerts and world tours. With so many big names on the road, it can be tough to keep track of who's touring where. But don't worry, we've got you covered."
+Host: "Hey music fans, welcome to our latest update. If you're looking to stay on top of the music industry's biggest events, you'll want to check out Billboard Pro's new music industry events calendar. This comprehensive calendar features major national and international events, including conferences, festivals, and networking mixers.
 
 [Short music transition]
 
-Host: "Some of the biggest names in K-pop are embarking on massive world tours and even Las Vegas residencies. Artists like BLACKPINK's Lisa, BTS, ENHYPEN, IVE, aespa, and KATSEYE are just a few of the many acts headed out on tour. And it's not just tours - many K-pop groups are also headlining music festivals and conventions around the world."
+Host: "Some highlights from the calendar include the Grammy Awards on February 7th, 2027, in Los Angeles, and the Hinterland Music Festival in Saint Charles, Iowa, from July 30th to August 1st, 2027. You can also mark your calendars for FANOMENON in Seoul from December 2nd to 12th, 2027.
 
 [Short music transition]
 
-Host: "So, what's happening in August 2026? KCon LA is coming up on August 14th to 16th, featuring headliners like NCT 127, ZEROBASEONE, and TOMORROW X TOGETHER. You can catch BTS on their Arirang world tour in Arlington, Texas, on August 15th and 16th. And if you're a fan of MAMAMOO, they're on their 2026 4Ward reunion tour, with stops in Chicago, Fort Worth, Cedar Park, Los Angeles, and San Jose throughout the month."
+Host: "And if you're an event organizer, you can get your event listed on the calendar by reaching out to joe.maimone@billboard.com. That's it for now. Stay tuned for more music industry updates, and don't forget to check out Billboard Pro for all the latest news, charts, and analysis."
 
-[Short music transition]
-
-Host: "Want to get tickets to these shows? You can find them on Ticketmaster, as well as resale and third-party sites like StubHub and SeatGeek. We'll be keeping you updated on all the latest K-pop concerts and tours, so be sure to check back with us for more information."
-
-[Outro music plays]
-
-Host: "Thanks for tuning in to our K-pop concert update. We'll see you at the next show!"
-
-[Outro music continues to play until the end]]]></description>
-        <pubDate>Sat, 15 Aug 2026 12:45:23 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v824/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v824_1786797923</guid>
+[Outro music plays]]]></description>
+        <pubDate>Sat, 15 Aug 2026 15:25:33 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v825/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v825_1786807533</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
