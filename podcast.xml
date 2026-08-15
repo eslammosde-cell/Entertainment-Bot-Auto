@@ -21,23 +21,29 @@
         <itunes:category text="Hobbies"/>
     </itunes:category>
     <item>
-        <title>Billboard’s Music Industry Events Calendar</title>
+        <title>‘Frozen 3’ Stars Kristen Bell, Idina Menzel & Josh Gad Tease New Music at D23</title>
         <description><![CDATA[[Intro music plays]
 
-Host: "Hey music fans, welcome to our latest update. If you're looking to stay on top of the music industry's biggest events, you'll want to check out Billboard Pro's new music industry events calendar. This comprehensive calendar features major national and international events, including conferences, festivals, and networking mixers.
+Host: "Welcome back to Trending on Billboard, I'm your host. Today, we've got some exciting news for all you Frozen fans out there. The third installment of Disney's blockbuster franchise is officially underway, and we've got the scoop on what's to come."
 
 [Short music transition]
 
-Host: "Some highlights from the calendar include the Grammy Awards on February 7th, 2027, in Los Angeles, and the Hinterland Music Festival in Saint Charles, Iowa, from July 30th to August 1st, 2027. You can also mark your calendars for FANOMENON in Seoul from December 2nd to 12th, 2027.
+Host: "At the recent D23: The Ultimate Disney Fan Event in Anaheim, California, stars Kristen Bell, Idina Menzel, and Josh Gad reunited onstage to tease new music ahead of the animated film's 2027 theatrical release. The trio even performed a few songs, including a rendition of 'Frozen Heart' and a new Olaf love song called 'Ooooh, Samantha'."
+
+[Short music clip of "Frozen Heart" plays]
+
+Host: "But that's not all - the stars also gave us a sneak peek at the story for Frozen 3. It looks like Anna will finally be tying the knot with Kristoff, and love is in the air for everyone... even Olaf? The film's directors, Jennifer Lee and Trent Correy, will be bringing this new story to life, with Oscar-winning songwriters Kristen Anderson-Lopez and Robert Lopez returning to write new music for the film."
 
 [Short music transition]
 
-Host: "And if you're an event organizer, you can get your event listed on the calendar by reaching out to joe.maimone@billboard.com. That's it for now. Stay tuned for more music industry updates, and don't forget to check out Billboard Pro for all the latest news, charts, and analysis."
+Host: "The first two Frozen films have been massive hits, grossing over $1.28 billion and $1.45 billion worldwide, respectively. And let's not forget the soundtracks - the original Frozen soundtrack reached number one on the Billboard 200 chart in 2014 and spent 13 weeks at the top. We can't wait to see what Frozen 3 has in store for us. Mark your calendars for November 24, 2027, when the film hits theaters."
 
-[Outro music plays]]]></description>
-        <pubDate>Sat, 15 Aug 2026 15:25:33 +0000</pubDate>
-        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v825/episode.mp3" length="1048576" type="audio/mpeg"/>
-        <guid isPermaLink="false">v825_1786807533</guid>
+[Outro music plays]
+
+Host: "That's all for today's episode of Trending on Billboard. Thanks for tuning in, and we'll catch you on the next one!"]]></description>
+        <pubDate>Sat, 15 Aug 2026 18:35:36 +0000</pubDate>
+        <enclosure url="https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v826/episode.mp3" length="1048576" type="audio/mpeg"/>
+        <guid isPermaLink="false">v826_1786818936</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
     </item>
