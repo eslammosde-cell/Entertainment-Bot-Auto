@@ -36,12 +36,31 @@ async def main():
         full_content = re.sub('<[^<]+?>', '', entry.summary)
 
     # 3. إعادة صياغة النص (لجعله مناسباً للبودكاست)
-    prompt = f"Rewrite this article as a short, engaging podcast script. Focus only on the facts provided: {full_content[:3000]}"
-    chat = client.chat.completions.create(
-        model="llama-3.1-8b-instant",  # تم تغيير الموديل لتفادي خطأ NotFoundError
-        messages=[{"role": "user", "content": prompt}]
-    )
-    podcast_script = chat.choices[0].message.content
+        prompt = f"Rewrite this article as a short, engaging podcast script. Focus only on the facts provided: {full_content[:3000]}"
+        
+        # قائمة الموديلات المتاحة للتجربة بالتتابع
+        models_to_try = [
+            "llama-3.3-70b-versatile",
+            "llama3-8b-8192",
+            "llama3-70b-8192",
+            "mixtral-8x7b-32768"
+        ]
+    
+        podcast_script = None
+        for model_name in models_to_try:
+            try:
+                chat = client.chat.completions.create(
+                    model=model_name,
+                    messages=[{"role": "user", "content": prompt}]
+                )
+                podcast_script = chat.choices[0].message.content
+                print(f"Successfully generated script using model: {model_name}")
+                break
+            except Exception as e:
+                print(f"Failed with model {model_name}: {e}")
+    
+        if not podcast_script:
+            raise RuntimeError("All Groq models failed. Check your GROQ_API_KEY and permissions.")
 
     # 4. تحويل النص المعاد صياغته لصوت
     audio_file = "episode.mp3"
