@@ -17,9 +17,7 @@ async def main():
     # 1. جلب الروابط من Billboard
     rss_url = "https://www.billboard.com/feed/"
     feed = feedparser.parse(rss_url)
-    if not feed.entries:
-        print("No RSS feed entries found.")
-        return
+    if not feed.entries: return
 
     # اختيار مقالة عشوائية
     entry = random.choice(feed.entries)
@@ -31,53 +29,31 @@ async def main():
         article = Article(link)
         article.download()
         article.parse()
-        full_content = article.text  # النص الكامل للمقالة
-    except Exception as e:
-        print(f"Article scraping failed: {e}")
+        full_content = article.text  # هنا النص الكامل للمقالة
+    except:
+        # في حال فشل السحب، نستخدم الملخص المتاح
         full_content = re.sub('<[^<]+?>', '', entry.summary)
 
     # 3. إعادة صياغة النص (لجعله مناسباً للبودكاست)
+    # ملاحظة: الذكاء الاصطناعي هنا لا "يؤلف" بل "يعيد صياغة" النص الذي سحبناه ليكون مشوقاً
     prompt = f"Rewrite this article as a short, engaging podcast script. Focus only on the facts provided: {full_content[:3000]}"
-    
-    podcast_script = ""
-    models_to_try = [
-        "llama-3.3-70b-versatile",
-        "llama-3.1-8b-instant",
-        "llama3-8b-8192",
-        "mixtral-8x7b-32768"
-    ]
-
-    for model_name in models_to_try:
-        try:
-            print(f"Attempting API request with model: {model_name}")
-            chat = client.chat.completions.create(
-                model=model_name,
-                messages=[{"role": "user", "content": prompt}]
-            )
-            podcast_script = chat.choices[0].message.content
-            print(f"Successfully generated script with {model_name}")
-            break
-        except Exception as e:
-            print(f"Model {model_name} failed: {e}")
-
-    # حماية من عدم اكتمال التوليد
-    if not podcast_script:
-        print("Groq API failed. Using fallback full content.")
-        podcast_script = full_content[:1000]
+    chat = client.chat.completions.create(
+        model="llama-3.1-8b-instante",
+        messages=[{"role": "user", "content": prompt}]
+    )
+    podcast_script = chat.choices[0].message.content
 
     # 4. تحويل النص المعاد صياغته لصوت
     audio_file = "episode.mp3"
     communicate = edge_tts.Communicate(podcast_script, "en-US-ChristopherNeural")
     await communicate.save(audio_file)
 
-    # حساب حجم الملف الصوتي ديناميكياً
-    file_size = os.path.getsize(audio_file) if os.path.exists(audio_file) else 1048576
-
     # 5. إنشاء ملف RSS
     run_num = os.getenv("GITHUB_RUN_NUMBER", "1")
     timestamp = int(time.time())
     audio_url = f"https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v{run_num}/episode.mp3"
     
+# إعداد ملف الـ RSS بتنسيق متوافق مع جميع المنصات
     rss_template = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" 
     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
@@ -104,7 +80,7 @@ async def main():
         <title>{title}</title>
         <description><![CDATA[{podcast_script}]]></description>
         <pubDate>{datetime.now(timezone.utc).strftime("%a, %d %b %Y %H:%M:%S +0000")}</pubDate>
-        <enclosure url="{audio_url}" length="{file_size}" type="audio/mpeg"/>
+        <enclosure url="{audio_url}" length="1048576" type="audio/mpeg"/>
         <guid isPermaLink="false">v{run_num}_{timestamp}</guid>
         <itunes:explicit>no</itunes:explicit>
         <itunes:duration>00:05:00</itunes:duration>
@@ -112,6 +88,7 @@ async def main():
   </channel>
 </rss>"""
     
+    # كتابة الملف وحفظه
     with open("podcast.xml", "w", encoding="utf-8") as f:
         f.write(rss_template)
 
