@@ -18,6 +18,7 @@ async def main():
     rss_url = "https://www.billboard.com/feed/"
     feed = feedparser.parse(rss_url)
     if not feed.entries:
+        print("No RSS feed entries found.")
         return
 
     # اختيار مقالة عشوائية
@@ -30,37 +31,39 @@ async def main():
         article = Article(link)
         article.download()
         article.parse()
-        full_content = article.text  # هنا النص الكامل للمقالة
-    except Exception:
-        # في حال فشل السحب، نستخدم الملخص المتاح
+        full_content = article.text  # النص الكامل للمقالة
+    except Exception as e:
+        print(f"Article scraping failed: {e}")
         full_content = re.sub('<[^<]+?>', '', entry.summary)
 
     # 3. إعادة صياغة النص (لجعله مناسباً للبودكاست)
-        prompt = f"Rewrite this article as a short, engaging podcast script. Focus only on the facts provided: {full_content[:3000]}"
-        
-        # قائمة الموديلات المتاحة للتجربة بالتتابع
-        models_to_try = [
-            "llama-3.3-70b-versatile",
-            "llama3-8b-8192",
-            "llama3-70b-8192",
-            "mixtral-8x7b-32768"
-        ]
+    prompt = f"Rewrite this article as a short, engaging podcast script. Focus only on the facts provided: {full_content[:3000]}"
     
-        podcast_script = None
-        for model_name in models_to_try:
-            try:
-                chat = client.chat.completions.create(
-                    model=model_name,
-                    messages=[{"role": "user", "content": prompt}]
-                )
-                podcast_script = chat.choices[0].message.content
-                print(f"Successfully generated script using model: {model_name}")
-                break
-            except Exception as e:
-                print(f"Failed with model {model_name}: {e}")
-    
-        if not podcast_script:
-            raise RuntimeError("All Groq models failed. Check your GROQ_API_KEY and permissions.")
+    podcast_script = ""
+    models_to_try = [
+        "llama-3.3-70b-versatile",
+        "llama-3.1-8b-instant",
+        "llama3-8b-8192",
+        "mixtral-8x7b-32768"
+    ]
+
+    for model_name in models_to_try:
+        try:
+            print(f"Attempting API request with model: {model_name}")
+            chat = client.chat.completions.create(
+                model=model_name,
+                messages=[{"role": "user", "content": prompt}]
+            )
+            podcast_script = chat.choices[0].message.content
+            print(f"Successfully generated script with {model_name}")
+            break
+        except Exception as e:
+            print(f"Model {model_name} failed: {e}")
+
+    # حماية من عدم اكتمال التوليد
+    if not podcast_script:
+        print("Groq API failed. Using fallback full content.")
+        podcast_script = full_content[:1000]
 
     # 4. تحويل النص المعاد صياغته لصوت
     audio_file = "episode.mp3"
@@ -75,7 +78,6 @@ async def main():
     timestamp = int(time.time())
     audio_url = f"https://github.com/eslammosde-cell/Entertainment-Bot-Auto/releases/download/v{run_num}/episode.mp3"
     
-    # إعداد ملف الـ RSS بتنسيق متوافق مع جميع المنصات
     rss_template = f"""<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" 
     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" 
@@ -110,7 +112,6 @@ async def main():
   </channel>
 </rss>"""
     
-    # كتابة الملف وحفظه
     with open("podcast.xml", "w", encoding="utf-8") as f:
         f.write(rss_template)
 
